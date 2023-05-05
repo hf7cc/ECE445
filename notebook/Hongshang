@@ -1,14 +1,14 @@
 
-##Hongshang Worklog
+## Hongshang Worklog
 
 
-##H02/08/23 - Initial Design
+## 02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
-##H02/28/2023 - Design Review Occured & Feedback was Given
+## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
 For e.g., fixing on a plant, reduce the content of your points etc. 
