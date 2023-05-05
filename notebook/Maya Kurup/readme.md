@@ -1,17 +1,16 @@
 
-# 02/08/23 - Initial Design
+# Maya Kurup Worklog
+
+## 02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 ![Initial Block Diagram]
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
-
-#02/17/2023 - Chassis update and Design Document
+## 02/17/2023 - Chassis update and Design Document
 We have found a chassis online that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
 
-
-#02/28/2023 - Design Review Occured & Feedback was Given
-
+## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 1. Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
 _For e.g., fixing on a plant, reduce the content of your points etc. 
@@ -29,10 +28,34 @@ _Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend t
 Please label the tables properly and keep the units consistent (3.3 V instead of 3.3 v).
 Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
-
-#03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
-
+## 03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
 In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
 1. The robot must be able to carry a plant and pot of total size of [weight: 15-20 pounds, diameter 10-20 cm ]
 2. When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
 3. Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
+
+##03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
+
+TA Meeting Meeting Minutes: 
+- Do high-level requirements look good? - YES
+- How exactly do we connect the wheels (chassis) to the plant
+_Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
+_Do we directly connect to the PCB which then connects to the light sensor/
+- How to order parts: Help Maya w the specific tab portion on myECE
+_Will our moisture & light sensor found work on our PCB?
+_Chassis: The one we found connects with wires, should we find one that connects to PCB directly/in a dif way?
+- How do we design PCB board?
+_Which components are necessary?
+_What components are we missing?
+_Do we need to create an example schematic using a specific software?
+_Do we order the PCB or are the already ordered and we pick it up & add our components?
+_We create a design of our PCB through Gerber files, then upload it to MyPCB, and it will be approved then the physical model will be printed and given to us within 2-3 weeks after the AUDIT deadline
+- Ordering battery?
+_Get battery over motor specification
+_5V battery and using a voltage regulator→ adjust voltage regulator
+- Consider watering plant as part of weight
+- For connecting chassis wires to PCB
+- Attach wire to 2-pin connector
+- Parts: Octo part
+_https://octopart.com/ 
+_https://www.ultralibrarian.com/ 
