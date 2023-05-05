@@ -439,6 +439,20 @@ Final circuitry after completion:
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/26.jpg)
 
+Final code implementation:
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codeone.png)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codetwo.png)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codethree.png)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/countfour.png)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codefive.png)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codesix.png)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/codeseven.png)
+
+
 ## 04/25/2023 - Refined & made final updated product before demo; Tested motion and notification subsystems
 
 As can be seen in the photo below, we got a platform added to our robot today, so that we can put the plant on it. 
