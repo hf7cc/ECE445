@@ -169,16 +169,8 @@ We mainly changed the requirements and verifications for each subsystem:
 
 | **Requirements**     | **Verification** |
 | --------------- | ------------ |
-| The moisture sensor must be able to detect dryness within 2 days, and never send an alarm when not dry.           | Once we put the moisture sensor in our plant we will test the sensor by testing different amounts of moisture- that is, by gradually watering the plant and noticing the moisture levels that are read by the sensor
-
-- The values provided by the sensor range from approximately 0 to 880, where 0 is for when the sensor is dry and 880 is for when the sensor is completely saturated with moisture.
-
-Verify the moisture sensor is working properly by taking moisture level measurements consistently throughout a week, and fact-check those levels with online resources and verifications of the plant itself. |
-| The light sensor should find the location with the most light within 15 cm of error. |   Have a light source such as a lamp, and move the light sensor further away from it, and see if the illuminance (lx) detected by it decreases.
-
-- We will test it by recording light sensor data over a week and will compare the results to daily sunlight emissions to see if light is properly being detected by the sensor.
-
-Continuously record the light sensor data over a weekly period, and make sure measurements being recorded are consistent and accurate with that daily sunlight emissions. |
+| The moisture sensor must be able to detect dryness within 2 days, and never send an alarm when not dry.           | Once we put the moisture sensor in our plant we will test the sensor by testing different amounts of moisture- that is, by gradually watering the plant and noticing the moisture levels that are read by the sensor. (The values provided by the sensor range from approximately 0 to 880, where 0 is for when the sensor is dry and 880 is for when the sensor is completely saturated with moisture.) Verify the moisture sensor is working properly by taking moisture level measurements consistently throughout a week, and fact-check those levels with online resources and verifications of the plant itself. |
+| The light sensor should find the location with the most light within 15 cm of error. |   Have a light source such as a lamp, and move the light sensor further away from it, and see if the illuminance (lx) detected by it decreases. (We will test it by recording light sensor data over a week and will compare the results to daily sunlight emissions to see if light is properly being detected by the sensor.) Continuously record the light sensor data over a weekly period, and make sure measurements being recorded are consistent and accurate with that daily sunlight emissions. |
 | The light sensor’s data must be correct | Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright.  |
 
 
