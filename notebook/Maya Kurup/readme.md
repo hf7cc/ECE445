@@ -3,6 +3,7 @@
 
 ## 02/08/23 - Initial Design (Team)
 We made an initial design through a visual aid for what our project should base off: 
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image1.png)
 
 We made an initial design for our block diagram to encompass the vision we have for our project: 
