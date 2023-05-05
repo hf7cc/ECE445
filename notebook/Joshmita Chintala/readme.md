@@ -1,13 +1,13 @@
 
-# Maya Kurup Worklog
+# Joshmita Chintala Worklog
 
-## 02/08/23 - Initial Design (Team)
+## 02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/0.bmp)
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
-## 02/17/2023 - Chassis update and Design Document (Team)
+## 02/17/2023 - Chassis update and Design Document
 We have found a chassis online that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
 
 ## 02/28/2023 - Design Review Occured & Feedback was Given
@@ -28,13 +28,13 @@ From Raman:
 Please label the tables properly and keep the units consistent (3.3 V instead of 3.3 v).
 Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
-## 03/06/2023 - Design Document Revisions were made to Update High-Level Requirements (Team)
+## 03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
 In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
 1. The robot must be able to carry a plant and pot of total size of [weight: 15-20 pounds, diameter 10-20 cm ]
 2. When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
 3. Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
 
-## 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet (Team)
+## 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
 
 TA Meeting Meeting Minutes: 
 - Do high-level requirements look good? - YES
@@ -71,7 +71,7 @@ Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/2.bmp)
 
-## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal (Maya & Joshmita)
+## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
 
 Moisture Sensor [Part](https://www.sparkfun.com/products/13322?_ga=2.48722852.34707985.1680741906-1735945614.1675881698)
 
@@ -85,7 +85,7 @@ Chassis [Part](https://www.sparkfun.com/products/12089)
 
 Chassis [Datasheet](http://cdn.sparkfun.com/datasheets/Robotics/DG02S.pdf)
 
-## 03/18/2023 - Moisture Level Research Conducted (Maya & Joshmita)
+## 03/18/2023 - Moisture Level Research Conducted
 
 For our moisture sensor, the level of moisture is denoted from ~0 to ~880 units (i.e., 0, for completely dry and 880 for soil levels completely saturated)
 
@@ -97,7 +97,7 @@ Moisture Levels recommended to have 40-50 percent relative humidity levels
 - 70% is the highest level a fern can tolerate: 616
 - How to know when fern is overwatered: Wilting & yellow leaves, soil becomes “waterlogged” and releases unpleasant odor, tip of leaves turning dark brown
 
-## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders (Hongshang & Team)
+## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
 
@@ -116,7 +116,7 @@ TA Meeting Minutes:
 - Not working with Machine Shop
 - Finalize plant, and restrictions of size based on Chassis
 
-## 03/29/2023 - Individual Progress Report was Created (Team)
+## 03/29/2023 - Individual Progress Report was Created
 
 Updated Design Considerations: 
 - We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
@@ -125,7 +125,7 @@ Updated Design Considerations:
 - Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
 
 
-## 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements (Team)
+## 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
 
 Final Subsystem Requirements & Verifications: 
 ### Sensor Subsystem
@@ -161,26 +161,15 @@ Final Subsystem Requirements & Verifications:
 
 **Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
 
-## 04/3/2023 → 04/5/2023 Another PCB & Circuit Schematic was created (Team)
+## 04/3/2023 → 04/5/2023 Another PCB & Circuit Schematic was created
 
 We re-implemented our microcontroller in this new schematic, and fully implemented our motor driver and motion subsystems compared our first design,
 
-## 04/6/2023 → 4/7/2023 - New PCB & Circuit Schematic was created (Team)
+## 04/6/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
 
 We implemented 2 motor drivers in this new and complete design.
 
-## 4/15/2023 - Plant Research was Conducted (Maya)
-
-Tips & Advice: 
-1. [10 best indoor plants for your health - Boosting Oxygen levels & purifying the air](https://www.goodhousekeeping.com/home/gardening/g40742429/best-indoor-plants-for-health/)
-   - Spider Plant, Peace Lily, Rubber Plants (Ficus Elastica), Elephant Ear Planrs, Snake Plants, Ferns, Pothos, English Ivy, Succulents and Cacti, Herbs
-2. [30 Indoor plants that like direct sunlight](https://www.thespruce.com/best-houseplants-for-sun-4147670)
-3. [23 of the best medium-light houseplants](https://gardenerspath.com/plants/houseplants/medium-light/)
-   - Boston ferns (Nephrolepis exaltata), aka sword ferns – not to be confused with Western sword ferns (Polystichum munitum) – have been a mainstay in homes for years. They’re tolerant of shade, but put them in moderate light and watch them explode with green goodness. 
-4. [30 Indoor plants for low light](https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures)
-   - Maidenhair Fern: Many ferns, including button, Autumn, rabbit's foot, maidenhair and more, are good options for low-light situations. Give them consistently moist soil and low to medium light.
-
-## 04/16/2023 - Plant was Bought from Home Depot (Maya)
+## 04/16/2023 - Plant was Bought from Home Depot
 
 Dimension of pot/plant to be used:
 - If square: 15.5L x 14.5W (cm)
@@ -200,13 +189,7 @@ Bought:
 - Mild Liquid Fertilizer
 - Weight: About 2-3 lbs
 
-## 04/17/2023 - Light Meter was Bought for Light Detection Verification (Maya)
-- Dif alternatives to test & verify light [intensity](https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants)
-  - App that measures light intensity in foot candles(2$): Did not buy, because there are not as many functionalities. 
-  - Light Meter($15): Bought because it is able to detect light intensity in different units most accurately. 
-    - Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (luminous intensity)
-
-## 4/18/2023 - New Cost Analysis was created (Maya)
+## 4/18/2023 - New Cost Analysis was created
 
 Our original PCB didn’t work, due to soldering and connection issues, so we are making a new design with both a DevBoard and a breadboard. The total cost of our project is about $176.07
 
@@ -227,39 +210,11 @@ Our original PCB didn’t work, due to soldering and connection issues, so we ar
 | RedBoard PCB    | Sparkfun     | 1        | $25.66 |
 | Motor Driver    | Sparkfun     | 1        | $23.49 |
 
-## 04/19/2023 - Chassis was Built (Maya)
+## 04/19/2023 - Chassis was Built
 Dimensions of [chassis](https://www.sparkfun.com/products/12089)
 - Moves @0.5-1.2 mph
 - Completed Kit Size - 165L x 157W x 65H (mm)
 - Wheel Diameter - 65 mm
-
-## 04/20/2023 - Testing of Light Sensitivity using the Light Meter Began (Maya)
-
-*Note that Sun sets East to West: Right→Left of Window/Room from morning→night)
-
-First day of Testing Light with Light Meter (in both FC & LUX)
-- 6:53pm on Saturday, April 22, an hour before sunset
-- UV Index: 0, and fairly low bc cloudy
-
-| Testing Location | Dist. from right of room | Light Intensity(LUX)| Light Intensity(FC)|
-| ---------------- | ------------------------ | ------------------- | ------------------ | 
-| Right of Room    | 0.59 meters              | 238                 | 26.1               |  
-| 2nd Most Right   | 1.65 meters              | 240                 | 26.1               |
-| 3rd Most Right   | 2.74 meters              | 261                 | 26.1               |
-| Left  of Room    | 3.66 meters              | 286                 | 26.2               |
-
-Second day of Testing Light with Light Meter (in both FC & LUX)
-- 11:49AM on Sunday, April 23
-- UV Index: 4, so some sunlight, but still a bit cloudy
-
-| Testing Location | Dist. from right of room | Light Intensity(LUX)| Light Intensity(FC)|
-| ---------------- | ------------------------ | ------------------- | ------------------ | 
-| Right of Room    | 0.59 meters              | 2550                | 256                |  
-| 2nd Most Right   | 1.65 meters              | 2470                | 238                |
-| 3rd Most Right   | 2.74 meters              | 2480                | 228                |
-| Left  of Room    | 3.66 meters              | 2770                | 267                |
-
-In conclusion, the testing of this data was to show where the maximum amount of light is, using a separate verification system (Light Meter). As a result, DIY Plantify did end up in the correct position in front of the window, where we tested the maximum amount of light was detected. 1st Day: Closest to Left Window (Due to sunset on Left/West Side) ; 2nd Day: Also closest to Left Window (Sun was directly beaming into all windows, least obstruction on left window). 
 
 ## 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
 
@@ -283,13 +238,13 @@ TA Meeting Minutes:
   - Everyone present equally
 - Prepare with questions & rebuttals
 
-## 04/22/2023 - Connection between breadboard & PCB was made (Maya & Joshmita)
+## 04/22/2023 - Connection between breadboard & PCB was made
 
 The motor driver is implemented in the top left, and they are connected to the motors. The light sensor is the photocell in the diagram, which gives analog input to the arduino. To its right is our implementation of the notification subsystem LED, which will blink when the moisture sensor shown is below a particular threshold, in our case, 600. The switch shown will turn the robot on.
 - Green Light indicates Power is on (on Arduino)
 - Flashing blue light is used for troubleshooting purposes (on Arduino)
 
-## 04/22/2023 - Initial Code was designed & implemented (Joshmita & Hongshang)
+## 04/22/2023 - Initial Code was designed & implemented
 
 Very initial functionality of the robot:
 The robot moves towards the brightest light by first checking left, right, and center. The robot is equipped with a photocell that measures the intensity of light in its surroundings. The code records the light value to the left, center, and right by turning the robot in each direction and then records the maximum value to determine the direction of the light source. Based on this information, the robot moves towards the light source by adjusting the motor speeds.
@@ -304,15 +259,15 @@ Our main goals after the 1st initial coding:
 5. Trying to get the robot to move in straight line motions only (could be tough)
 6. Implementing UV/IR light sensor instead of photocell (reach goal/not really necessary)
 
-## 04/23/2023 - Fixed Issues; Robot moves in a straight path now (Team)
+## 04/23/2023 - Fixed Issues; Robot moves in a straight path now 
 1. Made sure the chassis stops when optimal light is detected and the desired position is achieved. 
 2. Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
 
-## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented (Team)
+## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented
 
 *Code implemented by Joshmita
 
-## 04/25/2023 - Refined & made final updated product before demo; Tested motion and notification subsystems (Team)
+## 04/25/2023 - Refined & made final updated product before demo; Tested motion and notification subsystems
 
 - Glass platform was added to our robot today by the machine shop so that we can put the plant on it. 
 - Axle was added to the two front wheels to help ease the friction of the robot, and let it move more smoothly.
