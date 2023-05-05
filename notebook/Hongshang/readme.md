@@ -7,6 +7,8 @@ Hongshang Worklog
 ---------	
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/[notebook/7.png](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/New%20Bitmap%20image%20(2).bmp))
+
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
@@ -126,6 +128,8 @@ https://www.bbg.org/news/caring_for_ferns_as_houseplants#:~:text=Home%20moisture
 ## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
 ---------	
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
+
 
 ## 03/28/2023 - Meeting with Raman
 ---------	
@@ -227,6 +231,8 @@ Put the moisture sensor into a pile of dry paper and check if the LED will blink
 
 ## 04/3/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/8.png)
+
 
 
 ## 04/17/2023 - Light Meter was Bought for Light Detection Verification
@@ -236,6 +242,8 @@ App that measures light intensity in foot candles (2$): Did not buy, because the
 Light Meter ($15): Bought because it is able to detect light intensity in different units most accurately. 
 Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (luminous intensity)
 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/9.png)
 
 ## 4/18/2023 - Cost Analysis was created
 
@@ -326,6 +334,8 @@ Moves @0.5 -1.2 mph
 Completed Kit Size - 165L x 157W x 65H (mm)
 Wheel Diameter - 65 mm
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/10.png)
+
 
 
 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
@@ -357,15 +367,7 @@ Prepare with questions & rebuttals
 I had to reverse the input of one of the wheels to let the robot go straight, there must be something wrong with either robot assembling or circuit wiring.
 
 
-04/22/2023 - Breadboard & PCB were attached to Chassis
-Green Light indicates Power is on
-Flashing blue light is used for troubleshooting purposes 
 
-
-Initial Code Implemented: 
-
-1st Test Run after programming Arduino: 
-https://drive.google.com/file/d/1KsUBnA2oxzMBs3iuzBaZZFfjHGKUlKDg/view?usp=sharing
 
 04/23/2023 - Fixed Issues
 ---------
@@ -695,5 +697,7 @@ void loop() {
 04/26/2023 - Final Demo, Feedback received
 ---------
 Final Product: 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/12.png)
 
 
