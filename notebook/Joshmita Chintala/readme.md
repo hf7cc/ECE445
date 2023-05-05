@@ -441,7 +441,8 @@ Close up of Breadboard attachments:
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/11.png)
 
-Very initial functionality of the robot:
+**Very initial functionality of the robot:**
+
 The robot moves towards the brightest light by first checking left, right, and center. The robot is equipped with a photocell that measures the intensity of light in its surroundings. The code records the light value to the left, center, and right by turning the robot in each direction and then records the maximum value to determine the direction of the light source. Based on this information, the robot moves towards the light source by adjusting the motor speeds.
 
 The code initializes the pins and constants at the beginning of the program in the setup() function. The loop() function is called continuously, where the switch state is checked. If the switch is on, the robot searches for the brightest light source by following a specific sequence of turns and movements. The rightMotor() and leftMotor() functions are used to control the speed and direction of each motor. The robot stops if the switch is off.
