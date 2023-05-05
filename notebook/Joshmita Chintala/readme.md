@@ -6,6 +6,12 @@ We made an initial design for our block diagram to encompass the vision we have 
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/55951d80819499f842d3ed250a3bbcac00cd2585/notebook/blockdiagram.jpg)
 
+Flow Chart of Design:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image18.png)
+
+Initial Visual Aid:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image1.png)
+
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
 ## 02/17/2023 - Chassis update and Design Document
@@ -245,8 +251,8 @@ Our original PCB didn’t work, due to soldering and connection issues, so we ar
 | Photocell       | ECEB Shop    | 1        | $1.50  |
 | SPDT Switch     | ECEB Shop    | 1        | $1.50  |
 | Light Meter     | Amazon       | 1        | $14.99 |
-| 9V Battery      | Wallgreens   | 1        | $23.99 |
-| AA Batteries    | Wallgreens   | 8        | $14.99 |
+| 9V Battery      | Walgreens   | 1        | $23.99 |
+| AA Batteries    | Walgreens   | 8        | $14.99 |
 | RedBoard PCB    | Sparkfun     | 1        | $25.66 |
 | Motor Driver    | Sparkfun     | 1        | $23.49 |
 
@@ -256,7 +262,98 @@ Dimensions of [chassis](https://www.sparkfun.com/products/12089)
 - Completed Kit Size - 165L x 157W x 65H (mm)
 - Wheel Diameter - 65 mm
 
-## 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/77d974c6e01321b8c5f292fbad31dabb68ad207f/notebook/two.jpg)
+
+## 04/20/2023 - Conducted Light and Moisture Sensor Verifications
+
+One of my individual responsibilities in the group is to come up with testing methodologies for the light and moisture sensor data, track the data, and analyze the light and moisture sensor data over time.
+First, I tested the light sensor. 
+- **Goal:** Show that photocell light measurement decreases as distance increases from the light source
+- **How:** Using a voltage divider circuit that produces a voltage dependent on the photocell’s resistance, as shown below: 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/three.png)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/four.png)
+
+Voltage divider circuit implemented for testing photocell:
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/five.jpg)
+
+This circuit uses a 4.7kΩ resistor to divide the voltage with the photocell. As the surroundings get darker, resistance increases, and voltage decreases.
+
+The first test was conducted holding a flashlight at a distance and coming closer and closer to the photocell, therefore gradually increasing light on the photocell. 
+
+As can be seen below, the resistance values are decreasing gradually from 17410.28 Ω to 131.14 Ω, and the voltage values are increasing from 1.05 V to 4.84 V. This shows how the sensor is detecting that light on it is increasing.
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/six.png)
+
+This can be displayed in graphical format to show the clear correlation of the data: 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/seven.png)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/eight.png)
+
+The above graphs show how as the flashlight is getting closer to the photocell, the voltage increases and the resistance decreases, showing how it’s detecting light. 
+
+The next test conducted was with no light shining on the sensor and no darkness either - just with regular lighting of the room. 
+
+&nbsp; &nbsp; &nbsp;  The resistance values were from ~5000Ω to ~8000Ω.
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/nine.png)
+
+The third test was conducted with all lights turned off.
+
+&nbsp; &nbsp; The resistance values increased by a lot (to values between ~10000Ω to ~30000Ω), and the voltage decreased compared to the first test’s results, showing that the sensor is functioning well, and that the sensor detected the change in lighting to a darker environment. 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/ten.png)
+
+**Conducted Moisture Sensor Verification:**
+
+Next, I tested the moisture sensor.   
+
+- **Goal:** Show that the moisture sensor detects varying levels of moisture - take measurement when soil is dry, and then take measurement after just watering the plant, and then take measurement after an hour or so to see the moisture level decrease again.
+- **How:** By testing just the moisture sensor by using the circuit below: 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/eleven.png)
+
+*note: all soil moisture sensor measurements are in units of the sensor itself
+
+Tested moisture sensor with nothing touching it: **SOIL MOISTURE LEVEL 0**
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/twelve.jpg)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/thirteen.png)
+
+As can be seen above, the moisture sensor detects nothing, and that is what is expected.      
+
+Tested moisture sensor in a cup of water: **SOIL MOISTURE LEVEL 899**
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/fourteen.jpg)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/fifteen.png)
+
+When fully moist, the moisture sensor is detecting a level of 899, so the sensor is working, and this can also be used to check the relative moisture level of the soil, once tested.      
+
+Tested moisture sensor in dry soil of the plant: **SOIL MOISTURE LEVEL ~760** 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/sixteen.jpg)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/seventeen.png)
+
+We watered the plant after this and took readings the next day:
+
+Tested moisture sensor after one day of watering: **SOIL MOISTURE LEVEL 848**
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/eighteen.png)
+
+Tested moisture sensor after 5 minutes of watering: 8:48pm - 8:53pm: **SOIL MOISTURE LEVEL 893**
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/nineteen.png)
+
+After 20 minutes: Taken at 9:09pm: **SOIL MOISTURE LEVEL 888**
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/twenty.png)
+
+It can be seen how the soil moisture sensor is working since the moisture level is decreasing over time since the point the plant had been watered.
+   
+## 04/21/2023 - Meeting with Raman
 
 TA Meeting Minutes: 
 - Make sure to show all high-level requirements working during demo w/proof
@@ -280,18 +377,40 @@ TA Meeting Minutes:
 
 ## 04/22/2023 - Connection between breadboard & PCB was made
 
+We came up with the following new circuit diagram for our dev board and breadboard:
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image8.png)
+
 The motor driver is implemented in the top left, and they are connected to the motors. The light sensor is the photocell in the diagram, which gives analog input to the arduino. To its right is our implementation of the notification subsystem LED, which will blink when the moisture sensor shown is below a particular threshold, in our case, 600. The switch shown will turn the robot on.
+
+As shown below, we implemented our circuit diagram onto the dev board and the bread board and made the connection between them for the transfer of data and I/O.
+
+Connection between Arduino & Breadboard:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/twentyone.jpg)
+
+Close up of Arduino attachments:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image15.jpg)
+
+Close up of Breadboard attachments: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image34.jpg)
+
+## 04/22/2023 - Breadboard & PCB were attached to Chassis
+
 - Green Light indicates Power is on (on Arduino)
 - Flashing blue light is used for troubleshooting purposes (on Arduino)
 
-## 04/22/2023 - Initial Code was designed & implemented
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/11.png)
 
 Very initial functionality of the robot:
 The robot moves towards the brightest light by first checking left, right, and center. The robot is equipped with a photocell that measures the intensity of light in its surroundings. The code records the light value to the left, center, and right by turning the robot in each direction and then records the maximum value to determine the direction of the light source. Based on this information, the robot moves towards the light source by adjusting the motor speeds.
 
 The code initializes the pins and constants at the beginning of the program in the setup() function. The loop() function is called continuously, where the switch state is checked. If the switch is on, the robot searches for the brightest light source by following a specific sequence of turns and movements. The rightMotor() and leftMotor() functions are used to control the speed and direction of each motor. The robot stops if the switch is off.
 
+1st Test Run after programming Arduino: 
+https://drive.google.com/file/d/1KsUBnA2oxzMBs3iuzBaZZFfjHGKUlKDg/view?usp=sharing
+
 Our main goals after the 1st initial coding:
+
 1. Get the robot to stop moving once it’s found optimal light
 2. Implement moisture sensor/LED system (that is, if moisture below certain moisture level, blink LED)
 3. Make the robot move more smoothly (shouldn’t jerk so much)
@@ -300,17 +419,30 @@ Our main goals after the 1st initial coding:
 6. Implementing UV/IR light sensor instead of photocell (reach goal/not really necessary)
 
 ## 04/23/2023 - Fixed Issues; Robot moves in a straight path now 
+
 1. Made sure the chassis stops when optimal light is detected and the desired position is achieved. 
 2. Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
 
+Test run after programming new code:
+https://drive.google.com/file/d/1SgUafawGtIVndmSit95KRBC469cD4H0G/view?usp=sharing 
+
+Improvements: 
+1. Robot moves in a straight path and moves smoothly
+2. Robot finds light and stops moving 
+
 ## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented
 
-*Code implemented by Joshmita
+Final circuitry after completion:
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/26.jpg)
 
 ## 04/25/2023 - Refined & made final updated product before demo; Tested motion and notification subsystems
 
-- Glass platform was added to our robot today by the machine shop so that we can put the plant on it. 
-- Axle was added to the two front wheels to help ease the friction of the robot, and let it move more smoothly.
+As can be seen in the photo below, we got a platform added to our robot today, so that we can put the plant on it. 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/27.jpg)
+
+We also got an axle added to the two front wheels to help ease the friction of the robot, and let it move more smoothly. 
 
 Test runs after programming new and improved code:
 [Test1](https://drive.google.com/file/d/1ll1fXHr4sRN81HbiVXr6RRDm_tSz6ifv/view?usp=share_link)
@@ -322,12 +454,18 @@ Improvements:
   - When moisture sensor was put in the water, the LED did not blink
   - When moisture sensor was put in paper, the LED blinked as the moisture level is low
 
-Tested the motion subsystem:
-- Goal: The chassis should be able to move so that the plant does not fall off of it, and the platform should be large and durable enough to hold an indoor, medium-light plant.
-- How: Show that the robot can carry an object between 2-8 pounds. 
-- [Test Video](https://drive.google.com/file/d/1RWG3hcP99LffHtEo-0AsZFF_D7hqmoEo/view?usp=sharing)
+So, the notification subsystem is working. 
 
-## 04/26/2023 - Final Demo;Feedback received
+
+Tested the motion subsystem:
+- **Goal:** The chassis should be able to move so that the plant does not fall off of it, and the platform should be large and durable enough to hold an indoor, medium-light plant.
+- **How:** Show that the robot can carry an object between 2-8 pounds. 
+
+We tested the robot with our plant, which is about 2 pounds, and it was able to carry it. We then tested our robot with a phone which is about 8 pounds, and the robot was able to carry it as well. 
+Test run showing that 8 pounds phone can be carried: 
+https://drive.google.com/file/d/1RWG3hcP99LffHtEo-0AsZFF_D7hqmoEo/view?usp=sharing
+
+## 04/26/2023 - Final Demo; Feedback received
 Final Product: 
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/12.png)
