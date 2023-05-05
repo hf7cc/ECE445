@@ -71,7 +71,7 @@ https://www.ultralibrarian.com/
 
 Light sensor:
 Datasheet: http://www.adafruit.com/datasheets/Si1145-46-47.pdf 
-
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/1.bmp)
 Voltage Regulator (Not Used in final project): 
 
 
