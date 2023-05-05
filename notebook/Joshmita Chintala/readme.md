@@ -377,7 +377,7 @@ Tested moisture sensor in dry soil of the plant: **SOIL MOISTURE LEVEL ~760**
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/sixteen.jpg)
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4e0acb5fdd868d1a5ba58e3f7ea34f5d46e41ca6/notebook/seventeen.png)
 
-We watered the plant after this and took readings the next day:
+I watered the plant after this and took readings the next day:
 
 Tested moisture sensor after one day of watering: **SOIL MOISTURE LEVEL 848**
 
