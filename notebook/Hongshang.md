@@ -93,7 +93,7 @@ Instruction Booklet: http://cdn.sparkfun.com/datasheets/Robotics/multi-chassis%2
 
 
 
-03/18/2023 - Moisture Level Research Conducted
+## 03/18/2023 - Moisture Level Research Conducted
 ---------	
 
 
@@ -112,11 +112,11 @@ https://learn.sparkfun.com/tutorials/soil-moisture-sensor-hookup-guide/calibrati
 https://www.bbg.org/news/caring_for_ferns_as_houseplants#:~:text=Home%20moisture%20levels%20can%20be,percent%20levels%20recommended%20for%20ferns.
 
 
-03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
+## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
 ---------	
 
 
-03/28/2023 - Meeting with Raman
+## 03/28/2023 - Meeting with Raman
 ---------	
 TA Meeting Minutes
 PCB will arrive around April 10 or quicker
@@ -214,20 +214,20 @@ Put the moisture sensor into a pile of dry paper and check if the LED will blink
 
 
 
-04/3/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
----------
+## 04/3/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
 
 
-04/17/2023 - Light Meter was Bought for Light Detection Verification
----------
+
+## 04/17/2023 - Light Meter was Bought for Light Detection Verification
+
 Dif alternatives to test & verify light intensity: https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants
 App that measures light intensity in foot candles (2$): Did not buy, because there are not as many functionalities. 
 Light Meter ($15): Bought because it is able to detect light intensity in different units most accurately. 
 Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (luminous intensity)
 
 
-4/18/2023 - Cost Analysis was created
----------
+## 4/18/2023 - Cost Analysis was created
+
 The total cost of our project was about $176.07. 
 Description
 Manufacturer
