@@ -208,7 +208,7 @@ Dimension of pot/plant to be used:
   - Medium light plants: 75-150 FC
   - High light plants: 150+ FC
   
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/ccc80659bd52b7c344fe8f8a0df97edb3df3f37b/notebook/one.jpg)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/77d974c6e01321b8c5f292fbad31dabb68ad207f/notebook/plant.jpg)
 
   
 Bought:
@@ -218,6 +218,16 @@ Bought:
 - Room Temp: 65-85 Degrees
 - Mild Liquid Fertilizer
 - Weight: About 2-3 lbs
+
+## 4/17/2023 - Light Meter was Bought for Light Detection Verification
+
+Different alternatives to test & verify light intensity: https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants
+
+- App that measures light intensity in foot candles (2$): Did not buy, because there are not as many functionalities. 
+- Light Meter ($15): Bought because it is able to detect light intensity in different units most accurately. 
+   - Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (luminous intensity)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/77d974c6e01321b8c5f292fbad31dabb68ad207f/notebook/one.jpg)
 
 ## 4/18/2023 - New Cost Analysis was created
 
