@@ -379,6 +379,7 @@ Moisture Sensor integration
 ---------
 04/25/2023 - tried to implement the robot with a state machine to function like daily life, but failed because of frequent arduino uploading errors.
 ---------
+```
 const int PWMB = 8;
 const int BIN2 = 9;
 const int BIN1 = 10;
@@ -685,7 +686,7 @@ void loop() {
 
     }
 }
-
+```
 
 
 
