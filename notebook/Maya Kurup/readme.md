@@ -3,7 +3,7 @@
 
 ## 02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
-![Initial Block Diagram]
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/0.bmp)
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
@@ -64,8 +64,10 @@ TA Meeting Meeting Minutes:
 Light Sensor [Part](https://learn.adafruit.com/adafruit-si1145-breakout-board-uv-ir-visible-sensor/downloads)
 
 Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/1.bmp)
 
 *Could not find datasheet or any about VoltageRegulator, so was unused.
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/2.bmp)
 
 ## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
 
@@ -75,9 +77,13 @@ Moisture Sensor [Git Data Files](https://github.com/sparkfun/Soil_Moisture_Senso
 
 Moisture Sensor [Schematic](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.pdf)
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/4.bmp)
+
 Chassis [Part](https://www.sparkfun.com/products/12089)
 
 Chassis [Datasheet](http://cdn.sparkfun.com/datasheets/Robotics/DG02S.pdf)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/5.bmp)
 
 ## 03/18/2023 - Moisture Level Research Conducted
 
@@ -90,6 +96,72 @@ Moisture Levels recommended to have 40-50 percent relative humidity levels
 - 30% is the lowest level a fern can tolerate: 264
 - 70% is the highest level a fern can tolerate: 616
 - How to know when fern is overwatered: Wilting & yellow leaves, soil becomes “waterlogged” and releases unpleasant odor, tip of leaves turning dark brown
+
+## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
+
+## 03/28/2023 - Meeting with Raman
+TA Meeting Minutes: 
+- PCB will arrive around April 10 or quicker
+- Parts
+  - Approved during spring break
+  - Frequently check ECEB for parts
+- Design Doc: 11 points from email
+- Sign up for PCB demo to learn how to do it
+- Individual progress reports: due 3/29
+- Lab Notebook
+  - Physical lab notebook or git-file: IPR
+  - Git lab notebook - txt files
+- Not working with Machine Shop
+- Finalize plant, and restrictions of size based on Chassis
+
+## 03/29/2023 - Individual Progress Report was Created
+
+Updated Design Considerations: 
+- We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
+- The voltage of each subsystem (except the moving robot - chassis) have been confirmed to provide 5V. This has been updated in our block diagram (Figure 2). 
+- Voltage regulator has now been updated to be part of the PCB.
+- Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
+
+
+## 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
+
+Final Subsystem Requirements & Verifications: 
+### Sensor Subsystem
+**Light Sensor Requirement:** The light sensor should collect light data correctly. To do this, show that the photocell light measurements decrease as distance from the light source increases. 
+**Light Sensor Verification:** Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright. 
+
+**Moisture Sensor Requirement:** The moisture sensor must be able to detect dryness within 2 days, and send an alarm when soil is dry (below a threshold). 
+**Moisture Sensor Verification:** Test different levels of moisture by gradually watering the plant and notice the change in moisture levels read by the sensor. The values provided by the sensor range from approximately 0 to 880 (0 = dry; 880 = wet)
+
+### Motion Subsystem
+**Verfication:** The chassis should be able to move so that the plant does not fall off of it, and the platform should be large and durable enough to hold an indoor, medium-light plant.
+**Requirement:** Platform & chassis system should be able to carry objects ranging in 2-6 pounds. As well, an object with a diameter between 10-15 cm. 
+
+### Notification Subsystem
+**Verfication:** Must be able indicate dryness to the user using a notification system (blinking LED).
+**Requirement:** Set a minimum threshold of the moisture sensor in the program, and let the processor send a signal to an LED to blink. See if the LED blinks when below threshold.
+
+### Power Subsystem
+**Verfication:** The power system should provide a voltage, and be regulated throughout the entire system.
+**Requirement:** Use the “ON” LED on the Dev board, making sure it lights up green, indicating power is on.
+
+### Microcontroller
+**Verfication1:** Able to send a signal of the desired location to the chassis, based on the light sensor.
+**Requirement1:** Give the chassis a set of data and check whether it arrives at the desired location according to the data.
+
+**Verfication2:** Able to analyze data from the moisture sensor, and send a signal to the LED when indicated by the data. 
+**Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
+
+## 04/3/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/8.png)
+
+
+
+
+
 
 
 
