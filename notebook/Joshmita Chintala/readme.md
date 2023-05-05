@@ -180,11 +180,19 @@ Final Subsystem Requirements & Verifications:
 
 **Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
 
+PCB and Circuit Schematic:
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/96a6dceda2dcd06b51d90285615bb82f3050fe45/notebook/pcb_one.png)
+
 ## 04/3/2023 → 04/5/2023 Another PCB & Circuit Schematic was created
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/96a6dceda2dcd06b51d90285615bb82f3050fe45/notebook/pcb_two.png)
 
 We re-implemented our microcontroller in this new schematic, and fully implemented our motor driver and motion subsystems compared our first design,
 
 ## 04/6/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/96a6dceda2dcd06b51d90285615bb82f3050fe45/notebook/pcb_three.png)
 
 We implemented 2 motor drivers in this new and complete design.
 
