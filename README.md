@@ -11,7 +11,7 @@ DIY Plantify is a self-sufficient, moving robot that detects and tests the ultim
   - [Maya Kurup](https://github.com/hf7cc/ECE445--DIY-Plantify/tree/main/notebook/Maya%20Kurup)
   - [Joshmita Chintala](https://github.com/hf7cc/ECE445--DIY-Plantify/tree/main/notebook/Joshmita%20Chintala)
   - [Hongshang Fan](https://github.com/hf7cc/ECE445--DIY-Plantify/tree/main/notebook/Hongshang)
-- Final [Report](https://docs.google.com/document/d/1Do8JUfKYjaEaxzfNim3ungVurXcBMVBi9MKzweRQgfs/edit?usp=sharing)
+- [Final Report](https://docs.google.com/document/d/1Do8JUfKYjaEaxzfNim3ungVurXcBMVBi9MKzweRQgfs/edit?usp=sharing)
 
 ## Final Deliverables
 - Slideshow [Presentation](https://docs.google.com/presentation/d/1MMU9TmbLl_o-hGtrHEE-QVpILhFXO27GIN7vpxhxWrg/edit?usp=sharing)
