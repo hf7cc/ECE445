@@ -208,6 +208,9 @@ Dimension of pot/plant to be used:
   - Medium light plants: 75-150 FC
   - High light plants: 150+ FC
   
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/ccc80659bd52b7c344fe8f8a0df97edb3df3f37b/notebook/one.jpg)
+
+  
 Bought:
 - 04” Foliage/Fern
 - Grown From: Hampshire Farms
