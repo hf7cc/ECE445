@@ -62,16 +62,21 @@ TA Meeting Meeting Minutes:
   
   
 Light Sensor [Part](https://learn.adafruit.com/adafruit-si1145-breakout-board-uv-ir-visible-sensor/downloads)
+
 Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
+
 *Could not find datasheet or any about VoltageRegulator, so was unused.
 
 ## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
 
 Moisture Sensor [Part](https://www.sparkfun.com/products/13322?_ga=2.48722852.34707985.1680741906-1735945614.1675881698)
+
 Moisture Sensor [Git Data Files](https://github.com/sparkfun/Soil_Moisture_Sensor)
+
 Moisture Sensor [Schematic](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.pdf)
 
 Chassis [Part](https://www.sparkfun.com/products/12089)
+
 Chassis [Datasheet](http://cdn.sparkfun.com/datasheets/Robotics/DG02S.pdf)
 
 ## 03/18/2023 - Moisture Level Research Conducted
