@@ -15,20 +15,19 @@ We also talked to the Machine Shop about our plan and asked if they could build 
 02/28/2023 - Design Review Occured & Feedback was Given
 ---------	
 From Raman: 
-Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
-
-For e.g., fixing on a plant, reduce the content of your points etc. 
-In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
-Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
-Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
-Your block diagram needs modifications. Please refer to my design review feedback mail.
-Please provide more details in your subsystem overview like details regarding the type of battery, microcontroller etc.
-Please finalize the type of plant, it will help you define components like dryness, pot size etc. as those requirements are still vague.
-Changing directions would induce acceleration, the constant speed is only good if you are moving in a straight line.
-How do you plan to verify that the light sensor data is correct? Please put that in the verification section.
-Please make necessary changes if you plan to change the notification subsystem from speaker to LED.
-Please do not provide manufacturer guaranteed characteristics as your subsystem requirements. When you check the voltage with the multimeter, is it with the pot or without? The weight of the plant will be different before and after watering it.
-It looks like you guys are doing experimental testing for your tolerance analysis. Could you provide some mathematical or simulations for the testing you are planning to do?
+1. Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
+   - For e.g., fixing on a plant, reduce the content of your points etc. 
+   - In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
+   - Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
+   - Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
+2. Your block diagram needs modifications. Please refer to my design review feedback mail.
+3. Please provide more details in your subsystem overview like details regarding the type of battery, microcontroller etc.
+4. Please finalize the type of plant, it will help you define components like dryness, pot size etc. as those requirements are still vague.
+5. Changing directions would induce acceleration, the constant speed is only good if you are moving in a straight line.
+6. How do you plan to verify that the light sensor data is correct? Please put that in the verification section.
+7. Please make necessary changes if you plan to change the notification subsystem from speaker to LED.
+8. Please do not provide manufacturer guaranteed characteristics as your subsystem requirements. When you check the voltage with the multimeter, is it with the pot or without? The weight of the plant will be different before and after watering it.
+9. It looks like you guys are doing experimental testing for your tolerance analysis. Could you provide some mathematical or simulations for the testing you are planning to do?
 Please label the tables properly and keep the units consistent (3.3 V instead of 3.3 v).
 Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
