@@ -37,38 +37,37 @@ Are your battery or any other components at risk as they are very close to moist
 
 
 In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
-
-The robot must be able to carry a plant and pot of total size of [weight: 15-20 pounds, diameter 10-20 cm ]
-When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
-Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
+1. The robot must be able to carry a plant and pot of total size of [weight: 15-20 pounds, diameter 10-20 cm ]
+2. When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
+3. Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
 
 
 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
 ---------	
 
-TA Meeting Meeting Minutes
-Do high-level requirements look good? - YES
-How exactly do we connect the wheels (chassis) to the plant
-Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
-Do we directly connect to the PCB which then connects to the light sensor/
-How to order parts: Help Maya w the specific tab portion on myECE
-Will our moisture & light sensor found work on our PCB?
-Chassis: The one we found connects with wires, should we find one that connects to PCB directly/in a dif way?
-How do we design PCB board?
-Which components are necessary?
-What components are we missing?
-Do we need to create an example schematic using a specific software?
-Do we order the PCB or are the already ordered and we pick it up & add our components?
-We create a design of our PCB through Gerber files, then upload it to MyPCB, and it will be approved then the physical model will be printed and given to us within 2-3 weeks after the AUDIT deadline
-Ordering battery?
-Get battery over motor specification
-5V battery and using a voltage regulator→ adjust voltage regulator
-Consider watering plant as part of weight
-For connecting chassis wires to PCB
-Attach wire to 2-pin connector
-Parts: Octo part
-https://octopart.com/ 
-https://www.ultralibrarian.com/ 
+TA Meeting Meeting Minutes: 
+- Do high-level requirements look good? - YES
+- How exactly do we connect the wheels (chassis) to the plant
+  - Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
+  - Do we directly connect to the PCB which then connects to the light sensor/
+- How to order parts: Help Maya w the specific tab portion on myECE
+  - Will our moisture & light sensor found work on our PCB?
+  - Chassis: The one we found connects with wires, should we find one that connects to PCB directly/in a dif way?
+- How do we design PCB board?
+  - Which components are necessary?
+  - What components are we missing?
+  - Do we need to create an example schematic using a specific software?
+  - Do we order the PCB or are the already ordered and we pick it up & add our components?
+  - We create a design of our PCB through Gerber files, then upload it to MyPCB, and it will be approved then the physical model will be printed and given to us within 2-3 weeks after the AUDIT deadline
+- Ordering battery?
+  - Get battery over motor specification
+  - 5V battery and using a voltage regulator→ adjust voltage regulator
+- Consider watering plant as part of weight
+- For connecting chassis wires to PCB
+- Attach wire to 2-pin connector
+- Parts: Octo part
+  - https://octopart.com/ 
+  - https://www.ultralibrarian.com/ 
 
 
 Light sensor:
@@ -82,7 +81,6 @@ Voltage Regulator (Not Used in final project):
 
 
 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
----------	
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/3.bmp)
 
@@ -104,13 +102,11 @@ Instruction Booklet: http://cdn.sparkfun.com/datasheets/Robotics/multi-chassis%2
 
 
 ## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
----------	
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
 
 
 ## 03/28/2023 - Meeting with Raman
----------	
 TA Meeting Minutes
 PCB will arrive around April 10 or quicker
 Parts
