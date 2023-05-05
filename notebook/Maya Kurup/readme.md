@@ -7,12 +7,14 @@ We made an initial design through a visual aid for what our project should base 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image1.png)
 
 We made an initial design for our block diagram to encompass the vision we have for our project: 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/0.bmp)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/blockdiagram.jpg)
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
 ## 02/17/2023 - Chassis update and Design Document (Team)
-We have found a chassis online that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
+We have found a [chassis online](https://www.sparkfun.com/products/retired/12089) that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4144c61d7745133481f74377903ace64063f47f4/notebook/chassisj.png)
 
 ## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
