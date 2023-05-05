@@ -6,10 +6,13 @@ We made an initial design for our block diagram to encompass the vision we have 
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/55951d80819499f842d3ed250a3bbcac00cd2585/notebook/blockdiagram.jpg)
 
+
 Flow Chart of Design:
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image18.png)
 
 Initial Visual Aid:
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image1.png)
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
