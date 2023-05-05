@@ -3,13 +3,15 @@
 
 ## 02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/0.bmp)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/55951d80819499f842d3ed250a3bbcac00cd2585/notebook/blockdiagram.jpg)
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
 ## 02/17/2023 - Chassis update and Design Document
-We have found a chassis online that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
+We have found a [chassis online](https://www.sparkfun.com/products/retired/12089) that we can order, and we have decided to use that instead of getting one built at the machine shop. We are currently working on our design document. 
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/4144c61d7745133481f74377903ace64063f47f4/notebook/chassisj.png)
 ## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 1. Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
@@ -25,11 +27,11 @@ From Raman:
 7. Please make necessary changes if you plan to change the notification subsystem from speaker to LED.
 8. Please do not provide manufacturer guaranteed characteristics as your subsystem requirements. When you check the voltage with the multimeter, is it with the pot or without? The weight of the plant will be different before and after watering it.
 9. It looks like you guys are doing experimental testing for your tolerance analysis. Could you provide some mathematical or simulations for the testing you are planning to do?
-Please label the tables properly and keep the units consistent (3.3 V instead of 3.3 v).
-Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
+10. Please label the tables properly and keep the units consistent (3.3 V instead of 3.3 v).
+11. Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
 ## 03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
-In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
+After the design review, we made the following changes to the high-level requirements of our project:
 1. The robot must be able to carry a plant and pot of total size of [weight: 15-20 pounds, diameter 10-20 cm ]
 2. When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
 3. Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
@@ -60,14 +62,15 @@ TA Meeting Meeting Minutes:
   - https://octopart.com/ 
   - https://www.ultralibrarian.com/ 
   
-  
+**Light sensor and voltage regulator obtained from lab:**
+
 Light Sensor [Part](https://learn.adafruit.com/adafruit-si1145-breakout-board-uv-ir-visible-sensor/downloads)
 
 Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/1.bmp)
 
-*Could not find datasheet or any about VoltageRegulator, so was unused.
+Voltage Regulator (Not Used in final project): 
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/2.bmp)
 
