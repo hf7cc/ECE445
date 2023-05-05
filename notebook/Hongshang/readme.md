@@ -103,28 +103,6 @@ Instruction Booklet: http://cdn.sparkfun.com/datasheets/Robotics/multi-chassis%2
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/5.bmp)
 
 
-
-## 03/18/2023 - Moisture Level Research Conducted
----------	
-
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/6.bmp)
-
-
-
-Moisture sensor: 0-880 units (For soil levels completely saturated)
-Ferns: Moisture Levels recommended to have 40-50 percent relative humidity levels
-Moisture levels (Designated in Code)
-354-440 should be the range for an average moisture level
-30% is the lowest level a fern can tolerate: 264
-70% is the highest level a fern can tolerate: 616
-How to know when fern is overwatered: Wilting & yellow leaves, soil becomes “waterlogged” and releases unpleasant odor, tip of leaves turning dark brown
-
-Citations: 
-https://learn.sparkfun.com/tutorials/soil-moisture-sensor-hookup-guide/calibration-
-
-https://www.bbg.org/news/caring_for_ferns_as_houseplants#:~:text=Home%20moisture%20levels%20can%20be,percent%20levels%20recommended%20for%20ferns.
-
-
 ## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
 ---------	
 
@@ -235,108 +213,6 @@ Put the moisture sensor into a pile of dry paper and check if the LED will blink
 
 
 
-## 04/17/2023 - Light Meter was Bought for Light Detection Verification
-
-Dif alternatives to test & verify light intensity: https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants
-App that measures light intensity in foot candles (2$): Did not buy, because there are not as many functionalities. 
-Light Meter ($15): Bought because it is able to detect light intensity in different units most accurately. 
-Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (luminous intensity)
-
-
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/9.png)
-
-## 4/18/2023 - Cost Analysis was created
-
-The total cost of our project was about $176.07. 
-Description
-Manufacturer
-Quantity
-Price
-Link?
-Chassis
-Sparkfun
-1
-$40.00
-Link
-Moisture Sensor
-Sparkfun
-1
-$6.50
-Link
-Voltage regulator
-Found in lab
-1
-$0.00 
-
-
-Light Sensor
-Adafruit - Found in lab
-1
-$9.95
-Link
-Foliage Plant
-Home Depot
-1
-$6.52
-
-
-Jumper Wires
-ECEB Supply Shop
-20
-$7.40
-
-
-PhotoCell
-ECEB Supply Shop
-1
-$1.50
-
-
-Mini Power Switch (SPDT)
-ECEB Supply Shop
-1
-$1.50
-
-
-Light Meter
-Leaton
-1
-$14.99
-Link
-9V Lithium Battery
-Walgreens
-1
-$23.99
-
-
-AA Batteries
-Walgreens
-Pack of 8 - 5 were used
-$14.99
-
-
-RedBoard Microcontroller
-SparkFun
-1
-$25.66
-Link
-Motor Driver
-SparkFun
-1
-$23.49
-Link
-
-
-
-04/19/2023 - Chassis was Built
-Dimensions of chassis: https://www.sparkfun.com/products/12089 
-Moves @0.5 -1.2 mph
-Completed Kit Size - 165L x 157W x 65H (mm)
-Wheel Diameter - 65 mm
-
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/10.png)
-
-
 
 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
 ---------
@@ -365,7 +241,6 @@ Prepare with questions & rebuttals
 04/22/2023: basic code completed.
 ---------
 I had to reverse the input of one of the wheels to let the robot go straight, there must be something wrong with either robot assembling or circuit wiring.
-
 
 
 
