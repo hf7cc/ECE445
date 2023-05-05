@@ -212,6 +212,26 @@ Put the moisture sensor into a pile of dry paper and check if the LED will blink
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/8.png)
 
 
+## 4/18/2023 - New Cost Analysis was created
+
+Our original PCB didn’t work, due to soldering and connection issues, so we are making a new design with both a DevBoard and a breadboard. The total cost of our project is about $176.07
+
+
+| Description     | Supplier     | Quantity | Price  |
+| --------------- | ------------ | -------- | ------ | 
+| Chassis         | Sparkfun     | 1        | $40.00 | 
+| Moisture Sensor | Sparkfun     | 1        | $6.50  |
+| Voltage Reg     | ECEB Lab     | 1        | $0.00  |
+| Light Sensor    | ECEB Lab     | 1        | $9.95  |
+| Foliage Plant   | Home Depot   | 1        | $6.52  |
+| Jumper Wires    | ECEB Shop    | 20       | $7.40  |
+| Photocell       | ECEB Shop    | 1        | $1.50  |
+| SPDT Switch     | ECEB Shop    | 1        | $1.50  |
+| Light Meter     | Amazon       | 1        | $14.99 |
+| 9V Battery      | Wallgreens   | 1        | $23.99 |
+| AA Batteries    | Wallgreens   | 8        | $14.99 |
+| RedBoard PCB    | Sparkfun     | 1        | $25.66 |
+| Motor Driver    | Sparkfun     | 1        | $23.49 |
 
 
 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
