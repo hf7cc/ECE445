@@ -7,7 +7,7 @@ Hongshang Worklog
 ---------	
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/[notebook/7.png](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/New%20Bitmap%20image%20(2).bmp))
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/[notebook/7.png](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/New%20Bitmap%20image%20(2).bmp)
 
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
