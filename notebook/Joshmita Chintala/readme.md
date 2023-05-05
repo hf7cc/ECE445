@@ -76,6 +76,8 @@ Voltage Regulator (Not Used in final project):
 
 ## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/2b26844f494a01373a35ec71cc3da90e9449bb1d/notebook/orders.png)
+
 Moisture Sensor [Part](https://www.sparkfun.com/products/13322?_ga=2.48722852.34707985.1680741906-1735945614.1675881698)
 
 Moisture Sensor [Git Data Files](https://github.com/sparkfun/Soil_Moisture_Sensor)
@@ -88,6 +90,9 @@ Chassis [Part](https://www.sparkfun.com/products/12089)
 
 Chassis [Datasheet](http://cdn.sparkfun.com/datasheets/Robotics/DG02S.pdf)
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/d32a480c1084e9ff1613d14dcd60962196466e96/notebook/chassisjj.jpg)
+
+
 ## 03/18/2023 - Moisture Level Research Conducted
 
 For our moisture sensor, the level of moisture is denoted from ~0 to ~880 units (i.e., 0, for completely dry and 880 for soil levels completely saturated)
@@ -99,6 +104,12 @@ Moisture Levels recommended to have 40-50 percent relative humidity levels
 - 30% is the lowest level a fern can tolerate: 264
 - 70% is the highest level a fern can tolerate: 616
 - How to know when fern is overwatered: Wilting & yellow leaves, soil becomes “waterlogged” and releases unpleasant odor, tip of leaves turning dark brown
+
+Citations:
+
+https://learn.sparkfun.com/tutorials/soil-moisture-sensor-hookup-guide/calibration- 
+
+https://www.bbg.org/news/caring_for_ferns_as_houseplants#:~:text=Home%20moisture%20levels%20can%20be,percent%20levels%20recommended%20for%20ferns 
 
 ## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
 
@@ -122,10 +133,15 @@ TA Meeting Minutes:
 ## 03/29/2023 - Individual Progress Report was Created
 
 Updated Design Considerations: 
-- We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
-- The voltage of each subsystem (except the moving robot - chassis) have been confirmed to provide 5V. This has been updated in our block diagram (Figure 2). 
-- Voltage regulator has now been updated to be part of the PCB.
-- Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
+
+1. We are now using a LED instead of a speaker as the alert for the moisture sensor since a speaker could be distracting to the user. Instead, we will be implementing an LED that blinks, which will indicate to the user to water their plant.
+
+2. The voltage regulator which used to be in the power subsystem will now be in the PCB.
+
+3. We updated our block diagram to have more clear voltage readings. Each subsystem but the motion subsystem will provide 3.3V.
+
+4. After researching plants, we have specified the type of plant that we will use: an indoor, medium light plant with light intensity between 75-150 Foot Candles (FC - unit to measure plant light intensity). The pot will have about a 15cm diameter, and this will fit the chassis which has length 16.5cm and width 15.7cm.
+
 
 
 ## 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
