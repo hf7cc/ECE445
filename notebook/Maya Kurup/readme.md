@@ -13,10 +13,10 @@ We have found a chassis online that we can order, and we have decided to use tha
 ## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 1. Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
-_For e.g., fixing on a plant, reduce the content of your points etc. 
-_In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
-_Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
-_Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
+   _For e.g., fixing on a plant, reduce the content of your points etc. 
+   _In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
+   _Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
+   _Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
 2. Your block diagram needs modifications. Please refer to my design review feedback mail.
 3. Please provide more details in your subsystem overview like details regarding the type of battery, microcontroller etc.
 4. Please finalize the type of plant, it will help you define components like dryness, pot size etc. as those requirements are still vague.
@@ -34,7 +34,7 @@ In order to successfully obtain a fully working product by the end of this cours
 2. When placed indoors on a window sill, in front of a window, or in a balcony, without objects obstructing its path, the plant must “follow the light” by moving horizontally or vertically (on an X/Y axis) and must find optimal sunlight within 1 hour.
 3. Robot must detect when moisture is less in the plant and must alert the user (LED must blink)
 
-##03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
+## 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
 
 TA Meeting Meeting Minutes: 
 - Do high-level requirements look good? - YES
