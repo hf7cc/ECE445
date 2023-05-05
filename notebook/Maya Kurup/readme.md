@@ -99,6 +99,12 @@ Moisture Levels recommended to have 40-50 percent relative humidity levels
 
 ## 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders (Hongshang & Team)
 
+In our original PCB schematic we incorporated all of our necessary components like the microcontroller, the light and moisture sensors, the voltage regulator, and LED notification system. The main component we did not have originally was the motor driver. As well, we did not have a proper integration of the microcontroller. 
+
+Design Schematic of PCB: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image41.png)
+
+Image from PCB Ways: 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
 
 ## 03/28/2023 - Meeting with Raman
@@ -161,13 +167,19 @@ Final Subsystem Requirements & Verifications:
 
 **Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
 
-## 04/3/2023 → 04/5/2023 Another PCB & Circuit Schematic was created (Team)
 
-We re-implemented our microcontroller in this new schematic, and fully implemented our motor driver and motion subsystems compared our first design,
+
+## 04/3/2023 → 04/5/2023 Second PCB & Circuit Schematic was created (Team)
+
+In our second PCB schematic we incorporated the same components as before, however we re-implemented our microcontroller, as our first one was not resulting in a proper function. As well, we did not fully implement our motor driver/motion subsystem. 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image35.png)
 
 ## 04/6/2023 → 4/7/2023 - New PCB & Circuit Schematic was created (Team)
 
-We implemented 2 motor drivers in this new and complete design.
+In our third and last PCB schematic, we had all components needed for the final product design, however we implemented 2 motor drivers, and ended up using 1. All in all, the functionality of our final design would have been able to work, if it wasn’t for issues when soldering and making those specific connections. 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image16.png)
 
 ## 4/15/2023 - Plant Research was Conducted (Maya)
 
@@ -199,6 +211,9 @@ Bought:
 - Room Temp: 65-85 Degrees
 - Mild Liquid Fertilizer
 - Weight: About 2-3 lbs
+
+Fern that was bought: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image17.jpg)
 
 ## 04/17/2023 - Light Meter was Bought for Light Detection Verification (Maya)
 - Dif alternatives to test & verify light [intensity](https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants)
@@ -233,7 +248,13 @@ Dimensions of [chassis](https://www.sparkfun.com/products/12089)
 - Completed Kit Size - 165L x 157W x 65H (mm)
 - Wheel Diameter - 65 mm
 
-## 04/20/2023 - Testing of Light Sensitivity using the Light Meter Began (Maya)
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image12.jpg)
+
+Bottom of Chassis (Power Subsystem)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image20.jpg)
+
+## 04/20/2023 - Light Sensor Verification using Light Meter (Maya)
 
 *Note that Sun sets East to West: Right→Left of Window/Room from morning→night)
 
@@ -259,9 +280,13 @@ Second day of Testing Light with Light Meter (in both FC & LUX)
 | 3rd Most Right   | 2.74 meters              | 2480                | 228                |
 | Left  of Room    | 3.66 meters              | 2770                | 267                |
 
-In conclusion, the testing of this data was to show where the maximum amount of light is, using a separate verification system (Light Meter). As a result, DIY Plantify did end up in the correct position in front of the window, where we tested the maximum amount of light was detected. 1st Day: Closest to Left Window (Due to sunset on Left/West Side) ; 2nd Day: Also closest to Left Window (Sun was directly beaming into all windows, least obstruction on left window). 
+In conclusion, the testing of this data was to show where the maximum amount of light is, using a separate verification system (Light Meter). As a result, DIY Plantify did end up in the correct position in front of the window, where we tested the maximum amount of light was detected. 1st Day: Closest to Left Window (Due to sunset on Left/West Side) ; 2nd Day: Also closest to Left Window (Sun was directly beaming into all windows, least obstruction on left window).
 
-## 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
+**Further Light Sensitivity Verfications were conducted by Joshmita**
+Graph showing Light Detection by Light Sensor over time: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image15.jpg)
+
+## 04/21/2023 - Meeting with Raman & Design was Discussed
 
 TA Meeting Minutes: 
 - Make sure to show all high-level requirements working during demo w/proof
@@ -283,11 +308,32 @@ TA Meeting Minutes:
   - Everyone present equally
 - Prepare with questions & rebuttals
 
+Flow Chart of Design (for programming purposes):
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image18.png)
+
 ## 04/22/2023 - Connection between breadboard & PCB was made (Maya & Joshmita)
 
-The motor driver is implemented in the top left, and they are connected to the motors. The light sensor is the photocell in the diagram, which gives analog input to the arduino. To its right is our implementation of the notification subsystem LED, which will blink when the moisture sensor shown is below a particular threshold, in our case, 600. The switch shown will turn the robot on.
-- Green Light indicates Power is on (on Arduino)
-- Flashing blue light is used for troubleshooting purposes (on Arduino)
+Connection between Arduino & Breadboard:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image13.jpg)
+
+Close up of Arduino attachments:
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image15.jpg)
+
+Close up of Breadboard attachments: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image34.jpg)
+
+Indication of Green Light--> Power Subsystem is ON: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/11.png)
+
+Schematic of Light Sensor Connection: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image16.png)
+
+Final Full Schematic (TinkerCad)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image8.png)
+
+In our final design, we ended up implementing a breadboard with a bought dev board. This is due to the fact that we were having issues getting our PCB to work, so we opted to use a combination of a breadboard and dev board. Within this design schematic we have implemented our motor driver in the top left, which is able to connect and drive our 2 motors located in the back of the chassis. Next, we have our light sensor subsystem to the right of the motor driver, which is connected using a photocell and resistor to create a voltage division circuit. To the right of the light sensor subsystem, we have our LED notification system which incorporates a blinking LED and resistor in series. Connected to our arduino directly, we have our moisture subsystem which uses a moisture sensor, testing and collecting data of moisture levels based on what the metal prongs are connected to. One last implementation we added was a switch, which is able to turn on the system and move the chassis where maximum light is. As well, this button will turn on the moisture sensor to detect low moisture levels, and flash the blinking LED when below the threshold. 
+
+
 
 ## 04/22/2023 - Initial Code was designed & implemented (Joshmita & Hongshang)
 
@@ -304,9 +350,12 @@ Our main goals after the 1st initial coding:
 5. Trying to get the robot to move in straight line motions only (could be tough)
 6. Implementing UV/IR light sensor instead of photocell (reach goal/not really necessary)
 
-## 04/23/2023 - Fixed Issues; Robot moves in a straight path now (Team)
+## 04/23/2023 - Fixed Issues & Made Moisture Implemented (Team)
 1. Made sure the chassis stops when optimal light is detected and the desired position is achieved. 
 2. Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
+
+Moisture Sensor is connected by 3 pins to Arduino
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image10.png)
 
 ## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented (Team)
 
@@ -333,6 +382,19 @@ Tested the motion subsystem:
 - [Test Video](https://drive.google.com/file/d/1RWG3hcP99LffHtEo-0AsZFF_D7hqmoEo/view?usp=sharing)
 
 ## 04/26/2023 - Final Demo;Feedback received
-Final Product: 
+Final Product with Plant on Platform: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image21.jpg)
 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/12.png)
+Final Close-up of connections Made: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image23.jpg)
+
+## 04/28/2023 - Further Tests were made using Moisture Sensor
+
+Moisture Sensor on its own (air) - Shows a level of 0
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image48.jpg)
+
+Moisture Sensor in Soil(Not watered in 4 days) - Shows a level of about 760 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image44.jpg)
+
+Moisture Sensor in Water - Shows a level of 899
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image20.jpg)
