@@ -73,12 +73,16 @@ Light sensor:
 Datasheet: http://www.adafruit.com/datasheets/Si1145-46-47.pdf 
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/1.bmp)
+
 Voltage Regulator (Not Used in final project): 
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/2.bmp)
 
 
 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
 ---------	
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/3.bmp)
 
 
 Moisture sensor: 
@@ -87,15 +91,21 @@ Schematic: https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_M
 Eagle Files: https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.zip 
 Github: https://github.com/sparkfun/Soil_Moisture_Sensor 
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/4.bmp)
+
 
 Chassis:
 Datasheet: http://cdn.sparkfun.com/datasheets/Robotics/DG02S.pdf 
 Instruction Booklet: http://cdn.sparkfun.com/datasheets/Robotics/multi-chassis%204wd%20basic001.pdf 
 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/5.bmp)
+
 
 
 ## 03/18/2023 - Moisture Level Research Conducted
 ---------	
+
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/6.bmp)
 
 
 
