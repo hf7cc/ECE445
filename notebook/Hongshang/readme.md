@@ -16,6 +16,7 @@ We also talked to the Machine Shop about our plan and asked if they could build 
 ---------	
 From Raman: 
 Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
+
 For e.g., fixing on a plant, reduce the content of your points etc. 
 In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
 Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
