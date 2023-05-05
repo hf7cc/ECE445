@@ -155,39 +155,84 @@ Updated Design Considerations:
 
 ## 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
 
-Final Subsystem Requirements & Verifications: 
-### Sensor Subsystem
-**Light Sensor Requirement:** The light sensor should collect light data correctly. To do this, show that the photocell light measurements decrease as distance from the light source increases. 
+We mainly changed the requirements and verifications for each subsystem: 
 
-**Light Sensor Verification:** Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright. 
+**Sensor subsystem old R/V:**
 
-**Moisture Sensor Requirement:** The moisture sensor must be able to detect dryness within 2 days, and send an alarm when soil is dry (below a threshold). 
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The moisture sensor must be able to detect dryness within 2 days, and never send an alarm when not dry.          | Verify the moisture sensor is working properly by taking moisture level measurements consistently throughout a week, and fact-check those levels with online resources and verifications of the plant itself.      |
+| The light sensor should find the location with the most light within 15 cm of error. |   Continuously record the light sensor data over a weekly period, and make sure measurements being recorded are consistent and accurate with that daily sunlight emissions.    |
 
-**Moisture Sensor Verification:** Test different levels of moisture by gradually watering the plant and notice the change in moisture levels read by the sensor. The values provided by the sensor range from approximately 0 to 880 (0 = dry; 880 = wet)
+**Sensor subsystem new R/V:**
 
-### Motion Subsystem
-**Verfication:** The chassis should be able to move so that the plant does not fall off of it, and the platform should be large and durable enough to hold an indoor, medium-light plant.
 
-**Requirement:** Platform & chassis system should be able to carry objects ranging in 2-6 pounds. As well, an object with a diameter between 10-15 cm. 
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The moisture sensor must be able to detect dryness within 2 days, and never send an alarm when not dry.           | Once we put the moisture sensor in our plant we will test the sensor by testing different amounts of moisture- that is, by gradually watering the plant and noticing the moisture levels that are read by the sensor
 
-### Notification Subsystem
-**Verfication:** Must be able indicate dryness to the user using a notification system (blinking LED).
+- The values provided by the sensor range from approximately 0 to 880, where 0 is for when the sensor is dry and 880 is for when the sensor is completely saturated with moisture.
 
-**Requirement:** Set a minimum threshold of the moisture sensor in the program, and let the processor send a signal to an LED to blink. See if the LED blinks when below threshold.
+Verify the moisture sensor is working properly by taking moisture level measurements consistently throughout a week, and fact-check those levels with online resources and verifications of the plant itself. |
+| The light sensor should find the location with the most light within 15 cm of error. |   Have a light source such as a lamp, and move the light sensor further away from it, and see if the illuminance (lx) detected by it decreases.
 
-### Power Subsystem
-**Verfication:** The power system should provide a voltage, and be regulated throughout the entire system.
+- We will test it by recording light sensor data over a week and will compare the results to daily sunlight emissions to see if light is properly being detected by the sensor.
 
-**Requirement:** Use the “ON” LED on the Dev board, making sure it lights up green, indicating power is on.
+Continuously record the light sensor data over a weekly period, and make sure measurements being recorded are consistent and accurate with that daily sunlight emissions. |
+| The light sensor’s data must be correct | Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright.  |
 
-### Microcontroller
-**Verfication1:** Able to send a signal of the desired location to the chassis, based on the light sensor.
 
-**Requirement1:** Give the chassis a set of data and check whether it arrives at the desired location according to the data.
+**Motion subsytem old R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The chassis must be able to move at a constant speed (constant rate between 0.5 -1.2 mph) to ensure the plant does not fall from an accelerated force. As well, measurements can be recorded at a constant rate.         | Record the speed at which the chassis moves using IO Lab or some sort of measurement tool that defines velocity and acceleration.      |
+| The wheels should have an ideal amount of torque based on the size of the plant, in order for the plant to not fall.  |   Calculate the torque using the equation: Torque = rFsin(theta), and solve for Force using IO Lab.    |
+| The platform should be large and durable enough to hold a small/regular sized potted plant.  | Platform carrying plant can be pre-determined, so make sure the plant being bought fits the size of this platform (diameter of potted-plant base should cover maximum 95% and minimum 45% of the surface area.) |
 
-**Verfication2:** Able to analyze data from the moisture sensor, and send a signal to the LED when indicated by the data. 
+**Motion subsytem new R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The chassis must be able to move at a constant speed (constant rate between 0.5 -1.2 mph, as it moves in a straight line) to ensure the plant does not fall. As well, so measurements can be recorded at a constant rate.          | Record the speed at which the chassis moves using IO Lab or some sort of measurement tool that defines velocity and acceleration.      |
+| The wheels should have an ideal amount of torque based on the size of the plant, in order for the plant to not fall.  |   Calculate the torque using the equation: Torque = rFsin(theta), and solve for Force using IO Lab.    |
+| The platform should be large and durable enough to hold a small/regular sized potted plant.  | Platform carrying plant can be pre-determined, so make sure the plant being bought fits the size of this platform (diameter of potted-plant base should cover maximum 95% and minimum 45% of the surface area.) Since our chassis has the dimensions of 16.5x15.7 cm, our pot/plant should have a diameter of about 15 cm.  |
 
-**Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
+**Notification subsytem old R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| Must be able to make some noise (audible to the user) when receiving a signal of dryness.  | Connect the speaker to the processor and let the processor send the signal. See if the speaker makes some noise. |
+
+**Notification subsytem new R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| Must be able to blink when receiving a signal of dryness.  | Connect the LED (a small, colored or white LED that we will take from previous labs used in classes) to the processor and let the processor send the signal. See if the LED blink. |
+
+
+**Power subsytem old R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The system must provide over-current, over-voltage, under-voltage, and short-circuit protection.   | Connect the voltage regulator to various circuits with varying conditions, see if the regulator can shut down in time. |
+| It must provide a stable 3.3 ± 0.1 V power source.  | Check voltage using a multimeter, and ensure that the proper amount of power is being supplied. |
+
+**Power subsytem new R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| The system must provide over-current, over-voltage, under-voltage, and short-circuit protection.   | Connect the voltage regulator to various circuits with varying conditions, see if the regulator can shut down in time. |
+| It must provide a stable 3.3 ± 0.1 V power source.  | Check voltage using a multimeter, and ensure that the proper amount of power is being supplied. All of the provided voltages will be tested in the lab, without water in the potted plant, or else testing issues (spilling or leakage of water) may occur.  |
+
+
+**Microcontroller old R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| Able to store 10 sets of data gathered for each hour during initial setup.   | Check the memory space after an experimental initial setup.|
+| Able to send signal of current desired location to chassis.   | Give the chassis a set of data and check whether it arries desired location according to data. |
+| Able to analyze data from the moisture sensor and send a signal to the LED when indicated by the data.  | Put the moisture sensor into a pile of dry paper and check if the speaker will beep. |
+
+**Microcontroller new R/V:**
+| **Requirements**     | **Verification** |
+| --------------- | ------------ |
+| Able to store 10 sets of data gathered for each hour during initial setup.   | Check the memory space after an experimental initial setup.|
+| Able to send signal of current desired location to chassis.   | Give the chassis a set of data and check whether it arrives at desired location according to data. |
+| Able to analyze data from the moisture sensor and send a signal to the LED when indicated by the data.  | Put the moisture sensor into a pile of dry paper and check if the LED will blink. |
 
 PCB and Circuit Schematic:
 
