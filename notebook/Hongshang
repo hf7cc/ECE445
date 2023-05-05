@@ -1,14 +1,14 @@
 
-*to be copied into a Git repository & each person will add/delete stuff based on what they did individually
+##Hongshang Worklog
 
-“Hongshang Worklog”
-02/08/23 - Initial Design
+
+##H02/08/23 - Initial Design
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
-02/28/2023 - Design Review Occured & Feedback was Given
+##H02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
 For e.g., fixing on a plant, reduce the content of your points etc. 
@@ -27,7 +27,7 @@ Please label the tables properly and keep the units consistent (3.3 V instead of
 Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
 
-03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
+##H03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
 
 In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
 
