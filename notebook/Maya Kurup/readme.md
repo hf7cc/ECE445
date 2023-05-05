@@ -101,9 +101,11 @@ Moisture Levels recommended to have 40-50 percent relative humidity levels
 In our original PCB schematic we incorporated all of our necessary components like the microcontroller, the light and moisture sensors, the voltage regulator, and LED notification system. The main component we did not have originally was the motor driver. As well, we did not have a proper integration of the microcontroller. 
 
 Design Schematic of PCB: 
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image41.png)
 
-Image from PCB Ways: 
+Image from PCB Ways:
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/7.png)
 
 ## 03/28/2023 - Meeting with Raman
@@ -329,7 +331,8 @@ Indication of blinking Blue Light --> Troubleshooting Purposes:
 Schematic of Light Sensor Connection: 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image16.png)
 
-Final Full Schematic (TinkerCad)
+Final Full Schematic (TinkerCad):
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image8.png)
 
 In our final design, we ended up implementing a breadboard with a bought dev board. This is due to the fact that we were having issues getting our PCB to work, so we opted to use a combination of a breadboard and dev board. Within this design schematic we have implemented our motor driver in the top left, which is able to connect and drive our 2 motors located in the back of the chassis. Next, we have our light sensor subsystem to the right of the motor driver, which is connected using a photocell and resistor to create a voltage division circuit. To the right of the light sensor subsystem, we have our LED notification system which incorporates a blinking LED and resistor in series. Connected to our arduino directly, we have our moisture subsystem which uses a moisture sensor, testing and collecting data of moisture levels based on what the metal prongs are connected to. One last implementation we added was a switch, which is able to turn on the system and move the chassis where maximum light is. As well, this button will turn on the moisture sensor to detect low moisture levels, and flash the blinking LED when below the threshold. 
@@ -356,6 +359,7 @@ Our main goals after the 1st initial coding:
 2. Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
 
 Moisture Sensor is connected by 3 pins to Arduino:
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image10.png)
 
 ## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented (Team)
