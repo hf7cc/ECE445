@@ -4,14 +4,14 @@ Hongshang Worklog
 
 
 02/08/23 - Initial Design
-=========
+---------	
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 
 
 We also talked to the Machine Shop about our plan and asked if they could build a chassis for us. We will look into online options for a chassis and a light component. If we cannot find one, they will build a chassis for us.
 
 02/28/2023 - Design Review Occured & Feedback was Given
-=========
+---------	
 From Raman: 
 Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
 For e.g., fixing on a plant, reduce the content of your points etc. 
@@ -30,7 +30,9 @@ Please label the tables properly and keep the units consistent (3.3 V instead of
 Are your battery or any other components at risk as they are very close to moisture/soil? Please mention that in your safety.
 
 
-##H03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
+03/06/2023 - Design Document Revisions were made to Update High-Level Requirements
+---------	
+
 
 In order to successfully obtain a fully working product by the end of this course, we plan to reach the following goals. 
 
@@ -40,6 +42,7 @@ Robot must detect when moisture is less in the plant and must alert the user (LE
 
 
 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
+---------	
 
 TA Meeting Meeting Minutes
 Do high-level requirements look good? - YES
@@ -73,6 +76,7 @@ Voltage Regulator (Not Used in final project):
 
 
 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal
+---------	
 
 
 
@@ -90,6 +94,7 @@ Instruction Booklet: http://cdn.sparkfun.com/datasheets/Robotics/multi-chassis%2
 
 
 03/18/2023 - Moisture Level Research Conducted
+---------	
 
 
 
@@ -108,11 +113,11 @@ https://www.bbg.org/news/caring_for_ferns_as_houseplants#:~:text=Home%20moisture
 
 
 03/22/2023 - PCB Schematic was submitted during 2nd Round of PCBway Orders
-
+---------	
 
 
 03/28/2023 - Meeting with Raman
-
+---------	
 TA Meeting Minutes
 PCB will arrive around April 10 or quicker
 Parts
@@ -130,7 +135,7 @@ Finalize plant, and restrictions of size based on Chassis
 
 
 03/29/2023 - Individual Progress Report was Created
-
+---------	
 Updated Design Considerations: 
 We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
 The voltage of each subsystem (except the moving robot - chassis) have been confirmed to provide 3.3V. This has been updated in our block diagram (Figure 2). 
@@ -138,7 +143,7 @@ Voltage regulator has now been updated to be part of the PCB.
 Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
 
 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
-
+---------	
 Sensor subsystem
 Sensor subsystem consists of a light sensor and moisture sensor. The light sensor will record comparative light intensity data during the initial setup and will continue to track results based on time of day, obstruction due to shadows, and seasonal changes. The moisture sensor will watch out for low moisture levels and will alert (Notification subsystem) the user when the plant needs to be watered. 
 
@@ -210,10 +215,11 @@ Put the moisture sensor into a pile of dry paper and check if the LED will blink
 
 
 04/3/2023 → 4/7/2023 - New PCB & Circuit Schematic was created
-
+---------
 
 
 04/17/2023 - Light Meter was Bought for Light Detection Verification
+---------
 Dif alternatives to test & verify light intensity: https://greeneryunlimited.co/blogs/plant-care/how-to-measure-light-for-plants
 App that measures light intensity in foot candles (2$): Did not buy, because there are not as many functionalities. 
 Light Meter ($15): Bought because it is able to detect light intensity in different units most accurately. 
@@ -221,7 +227,7 @@ Used 9V battery to power it; can be measured in FC (Foot Candles) or in LUX (lum
 
 
 4/18/2023 - Cost Analysis was created
-
+---------
 The total cost of our project was about $176.07. 
 Description
 Manufacturer
@@ -312,7 +318,7 @@ Wheel Diameter - 65 mm
 
 
 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
-
+---------
 TA Meeting Minutes: 
 Make sure to show all high-level requirements working during demo w/proof
 Moisture sensor/Notification system: show that the LED can blink, even if moisture data collection is unable to be made
@@ -336,7 +342,8 @@ Prepare with questions & rebuttals
 
 
 04/22/2023: basic code completed.
-	I had to reverse the input of one of the wheels to let the robot go straight, there must be something wrong with either robot assembling or circuit wiring.
+---------
+I had to reverse the input of one of the wheels to let the robot go straight, there must be something wrong with either robot assembling or circuit wiring.
 
 
 04/22/2023 - Breadboard & PCB were attached to Chassis
@@ -350,14 +357,15 @@ Initial Code Implemented:
 https://drive.google.com/file/d/1KsUBnA2oxzMBs3iuzBaZZFfjHGKUlKDg/view?usp=sharing
 
 04/23/2023 - Fixed Issues
-
+---------
 Made sure Chassis stops when optimal light data is collected, and desired position is achieved. 
 Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
 Moisture Sensor integration
 
 04/24/2023 - Continued to resolve errors and issues
-
+---------
 04/25/2023 - tried to implement the robot with a state machine to function like daily life, but failed because of frequent arduino uploading errors.
+---------
 const int PWMB = 8;
 const int BIN2 = 9;
 const int BIN1 = 10;
@@ -674,7 +682,7 @@ void loop() {
 
 
 04/26/2023 - Final Demo, Feedback received
-
+---------
 Final Product: 
 
 
