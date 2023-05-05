@@ -13,10 +13,10 @@ We have found a chassis online that we can order, and we have decided to use tha
 ## 02/28/2023 - Design Review Occured & Feedback was Given
 From Raman: 
 1. Based on Prof. Mironenko's suggestions, please consider making a few modifications in your high-level requirements. 
-   _For e.g., fixing on a plant, reduce the content of your points etc. 
-   _In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
-   _Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
-   _Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
+   -For e.g., fixing on a plant, reduce the content of your points etc. 
+   -In point 1, you can just mention that you are planning to track the room and find the points with max and min luminosity/heat within the limits of your sensor. 
+   -Modify point 2 demonstrate it a testable criterion, like, the chassis should be able to move to the location (X & Y coordinate) with most light in the room (for a certain time of the day) with at most 1.2 mph (have some accuracy component attached to it). Please modify this example point as per the scope of your project.
+   -Modify point 3 to have an LED alarm instead of a speaker alarm, if you intend to change your notification subsystem.
 2. Your block diagram needs modifications. Please refer to my design review feedback mail.
 3. Please provide more details in your subsystem overview like details regarding the type of battery, microcontroller etc.
 4. Please finalize the type of plant, it will help you define components like dryness, pot size etc. as those requirements are still vague.
@@ -39,23 +39,23 @@ In order to successfully obtain a fully working product by the end of this cours
 TA Meeting Meeting Minutes: 
 - Do high-level requirements look good? - YES
 - How exactly do we connect the wheels (chassis) to the plant
-_Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
-_Do we directly connect to the PCB which then connects to the light sensor/
+  - Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
+  - Do we directly connect to the PCB which then connects to the light sensor/
 - How to order parts: Help Maya w the specific tab portion on myECE
-_Will our moisture & light sensor found work on our PCB?
-_Chassis: The one we found connects with wires, should we find one that connects to PCB directly/in a dif way?
+  - Will our moisture & light sensor found work on our PCB?
+  - Chassis: The one we found connects with wires, should we find one that connects to PCB directly/in a dif way?
 - How do we design PCB board?
-_Which components are necessary?
-_What components are we missing?
-_Do we need to create an example schematic using a specific software?
-_Do we order the PCB or are the already ordered and we pick it up & add our components?
-_We create a design of our PCB through Gerber files, then upload it to MyPCB, and it will be approved then the physical model will be printed and given to us within 2-3 weeks after the AUDIT deadline
+  - Which components are necessary?
+  - What components are we missing?
+  - Do we need to create an example schematic using a specific software?
+  - Do we order the PCB or are the already ordered and we pick it up & add our components?
+  - We create a design of our PCB through Gerber files, then upload it to MyPCB, and it will be approved then the physical model will be printed and given to us within 2-3 weeks after the AUDIT deadline
 - Ordering battery?
-_Get battery over motor specification
-_5V battery and using a voltage regulator→ adjust voltage regulator
+  - Get battery over motor specification
+  - 5V battery and using a voltage regulator→ adjust voltage regulator
 - Consider watering plant as part of weight
 - For connecting chassis wires to PCB
 - Attach wire to 2-pin connector
 - Parts: Octo part
-_https://octopart.com/ 
-_https://www.ultralibrarian.com/ 
+  - https://octopart.com/ 
+  - https://www.ultralibrarian.com/ 
