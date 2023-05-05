@@ -182,7 +182,7 @@ Tips & Advice:
 
 ## 04/16/2023 - Plant was Bought from Home Depot (Maya)
 
-Dimension of pot/plant to be used
+Dimension of pot/plant to be used:
 - If square: 15.5L x 14.5W (cm)
 -  circle: Diameter 15 (cm)
 - Weight: 15-20 (lbs) or 6.8-9.1 (kg)
@@ -310,150 +310,7 @@ Our main goals after the 1st initial coding:
 
 ## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented (Team)
 
-Final code implementation:
-
-const int PWMB = 8;
-const int BIN2 = 9;
-const int BIN1 = 10;
-const int AIN1 = 11;
-const int AIN2 = 12;
-const int PWMA = 13;
-const int SW_PIN = 7;     // Switch to turn the motors on and off
-const int LIGHT_PIN = A0; // Photocell
-const int LED_PIN = 2;
-const int SOILPIN = A1;//Declare a variable for the soil moisture sensor
-const int SOILPOWER = 5;//Variable for Soil moisture Power
-
-  // Store light levels as array [left, center, right]
-  int val = 0;
-  int light_level;
-  int count = 0;
-  int max_light = 0;
-  int max_count=0 ;
-  int total_count=0;
-
-// Constants
-const int SEARCH_DRIVE_TIME = 200;  // Time to run one motor while searching
-const int TURN_DRIVE_TIME = 200;    // Time to turn in a direction
-const int MOVE_DRIVE_TIME = 300;   // Time to drive in a direction
-const int STOP_DRIVE_TIME = 200;    // Time to stop after moving
-const int NUM_LIGHT_LEVELS = 3;
-const int DELAY_TIME = 1000;
-
-void setup() {
-
-  // Set switch pin
-  pinMode(SW_PIN, INPUT_PULLUP);
-
-  // Set the motor control pins as outputs
-  pinMode(AIN1, OUTPUT);
-  pinMode(AIN2, OUTPUT);
-  pinMode(PWMA, OUTPUT);
-  pinMode(BIN1, OUTPUT);
-  pinMode(BIN2, OUTPUT);
-  pinMode(PWMB, OUTPUT);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(SOILPOWER, OUTPUT);//Set D5 as an OUTPUT
-  digitalWrite(SOILPOWER, LOW);
-  // Initialize Serial comms
-  Serial.begin(9600);
-  Serial.println("Feed me photons!");
-}
-
-void loop() {
-  // If switch is flipped, search for light
-  if(digitalRead(SW_PIN) == LOW){
-    if (count<11){
-      light_level = analogRead(LIGHT_PIN);
-        if (light_level>max_light){
-          max_light=light_level;
-          max_count=count;
-        }
-        drive(255, -255);
-        delay(SEARCH_DRIVE_TIME);
-        drive(0, 0);
-        delay(STOP_DRIVE_TIME);
-        count=count+1;
-        }        
-      total_count=22-max_count;
-    if (count>10 && count <total_count){
-        drive(-255, 255);
-        delay(SEARCH_DRIVE_TIME);
-        drive(0, 0);
-       delay(STOP_DRIVE_TIME);
-        count=count+1;
-    }
-    if (count>=total_count){
-      digitalWrite(SOILPOWER, HIGH);//turn D5 "On"
-      delay(10);//wait 10 milliseconds
-      val = analogRead(SOILPIN);//Read the SIG value form sensor
-      digitalWrite(SOILPOWER, LOW);//turn D5 "Off"
-      if(val<850){
-        digitalWrite(LED_PIN, HIGH);
-        delay(DELAY_TIME);
-        digitalWrite(LED_PIN, LOW);
-        delay(DELAY_TIME);
-      }
-      else {
-      digitalWrite(LED_PIN, LOW);
-      delay(DELAY_TIME);
-      }
-    Serial.print("moisture: ");
-    Serial.println(val);
-      // drive(0, 0);
-      // delay(999);
-    }
-   
-    Serial.println();
-    Serial.print("Max light: ");
-    Serial.println(max_light);
-    Serial.print("count: ");
-    Serial.println(count);
-    Serial.print("The Max count: ");
-    Serial.println(max_count);
- 
-  }
-}  
-
-void rightMotor(int motorSpeed)                      
-{
-  // If speed is positive, run the motor forward
-  if (motorSpeed > 0) {
-    digitalWrite(AIN1, HIGH);
-    digitalWrite(AIN2, LOW);
-  // If it's negative, run the motor backward
-  } else if (motorSpeed < 0) {
-    digitalWrite(AIN1, LOW);
-    digitalWrite(AIN2, HIGH);
-  // If it's 0, brake the motor
-  } else {
-    digitalWrite(AIN1, LOW);
-    digitalWrite(AIN2, LOW);
-  }
-  analogWrite(PWMA, abs(motorSpeed));
-}
-
-void leftMotor(int motorSpeed)
-{
-  // If speed is positive, run the motor forward
-  if (motorSpeed > 0) {
-    digitalWrite(BIN1, HIGH);
-    digitalWrite(BIN2, LOW);
-  // If it's negative, run the motor backward
-  } else if (motorSpeed < 0) {
-    digitalWrite(BIN1, LOW);
-    digitalWrite(BIN2, HIGH);
-  // If it's 0, brake the motor
-  } else {
-    digitalWrite(BIN1, LOW);
-    digitalWrite(BIN2, LOW);
-  }
-  analogWrite(PWMB, abs(motorSpeed));
-}
-void drive(int leftSpeed, int rightSpeed) {
-  leftMotor(leftSpeed);
-  rightMotor(rightSpeed);
-}
+*Code implemented by Joshmita
 
 ## 04/25/2023 - Refined & made final updated product before demo; Tested motion and notification subsystems (Team)
 
@@ -477,4 +334,5 @@ Tested the motion subsystem:
 
 ## 04/26/2023 - Final Demo;Feedback received
 Final Product: 
+
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/12.png)
