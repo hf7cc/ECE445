@@ -2,6 +2,9 @@
 # Maya Kurup Worklog
 
 ## 02/08/23 - Initial Design (Team)
+We made an initial design through a visual aid for what our project should base off: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image1.png)
+
 We made an initial design for our block diagram to encompass the vision we have for our project: 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/0.bmp)
 
@@ -60,24 +63,20 @@ TA Meeting Meeting Minutes:
   - https://octopart.com/ 
   - https://www.ultralibrarian.com/ 
   
-  
-Light Sensor [Part](https://learn.adafruit.com/adafruit-si1145-breakout-board-uv-ir-visible-sensor/downloads)
-
-Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
+Parts: 
+- Light Sensor [Part](https://learn.adafruit.com/adafruit-si1145-breakout-board-uv-ir-visible-sensor/downloads)
+- Light Sensor [Datasheet](http://www.adafruit.com/datasheets/Si1145-46-47.pdf)
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/1.bmp)
-
-*Could not find datasheet or any about VoltageRegulator, so was unused.
+- Could not find datasheet or any about Voltage Regulator,so was unused
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/2.bmp)
 
 ## 03/17/2023 - Chassis & Moisture Sensors were Bought through ECE Portal (Maya & Joshmita)
-
-Moisture Sensor [Part](https://www.sparkfun.com/products/13322?_ga=2.48722852.34707985.1680741906-1735945614.1675881698)
-
-Moisture Sensor [Git Data Files](https://github.com/sparkfun/Soil_Moisture_Sensor)
-
-Moisture Sensor [Schematic](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.pdf)
+Parts: 
+- Moisture Sensor [Part](https://www.sparkfun.com/products/13322?_ga=2.48722852.34707985.1680741906-1735945614.1675881698)
+- Moisture Sensor [Git Data Files](https://github.com/sparkfun/Soil_Moisture_Sensor)
+- Moisture Sensor [Schematic](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/SparkFun_Soil_Moisture_Sensor.pdf)
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/4.bmp)
 
@@ -283,8 +282,9 @@ Second day of Testing Light with Light Meter (in both FC & LUX)
 In conclusion, the testing of this data was to show where the maximum amount of light is, using a separate verification system (Light Meter). As a result, DIY Plantify did end up in the correct position in front of the window, where we tested the maximum amount of light was detected. 1st Day: Closest to Left Window (Due to sunset on Left/West Side) ; 2nd Day: Also closest to Left Window (Sun was directly beaming into all windows, least obstruction on left window).
 
 **Further Light Sensitivity Verfications were conducted by Joshmita**
-Graph showing Light Detection by Light Sensor over time: 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image15.jpg)
+
+Graph showing Light Detection by Light Sensor vs. Position from source: 
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image30.png)
 
 ## 04/21/2023 - Meeting with Raman & Design was Discussed
 
@@ -322,7 +322,8 @@ Close up of Arduino attachments:
 Close up of Breadboard attachments: 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image34.jpg)
 
-Indication of Green Light--> Power Subsystem is ON: 
+Indication of Green Light --> Power Subsystem is ON:
+Indication of blinking Blue Light --> Troubleshooting Purposes:
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/11.png)
 
 Schematic of Light Sensor Connection: 
@@ -354,7 +355,7 @@ Our main goals after the 1st initial coding:
 1. Made sure the chassis stops when optimal light is detected and the desired position is achieved. 
 2. Back two motors move at the same time at the same speed (constant rate between 0.5 -1.2 mph)
 
-Moisture Sensor is connected by 3 pins to Arduino
+Moisture Sensor is connected by 3 pins to Arduino:
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image10.png)
 
 ## 04/24/2023 - Continued to resolve errors and issues; Notification subsystem is now fully implemented (Team)
@@ -397,4 +398,4 @@ Moisture Sensor in Soil(Not watered in 4 days) - Shows a level of about 760
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image44.jpg)
 
 Moisture Sensor in Water - Shows a level of 899
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image20.jpg)
+![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image22.jpg)
