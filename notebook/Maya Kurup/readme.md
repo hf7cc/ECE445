@@ -331,9 +331,6 @@ Indication of Green Light --> Power Subsystem is ON:
 Indication of blinking Blue Light --> Troubleshooting Purposes:
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/11.png)
 
-Schematic of Light Sensor Connection: 
-![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image16.png)
-
 Final Full Schematic (TinkerCad):
 
 ![Image](https://github.com/hf7cc/ECE445--DIY-Plantify/blob/main/notebook/image8.png)
