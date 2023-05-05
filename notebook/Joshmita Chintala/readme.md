@@ -38,7 +38,7 @@ After the design review, we made the following changes to the high-level require
 
 ## 03/07/2023 - Meeting with Raman, Light Sensor & Voltage Regulator were gathered from ECE storage cabinet
 
-TA Meeting Meeting Minutes: 
+TA Meeting Minutes: 
 - Do high-level requirements look good? - YES
 - How exactly do we connect the wheels (chassis) to the plant
   - Do we need a breadboard/circuit that we make connecting the wires on the chassis to the breadboard?
