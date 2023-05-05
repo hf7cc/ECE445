@@ -126,77 +126,54 @@ Finalize plant, and restrictions of size based on Chassis
 03/29/2023 - Individual Progress Report was Created
 ---------	
 Updated Design Considerations: 
-We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
-The voltage of each subsystem (except the moving robot - chassis) have been confirmed to provide 3.3V. This has been updated in our block diagram (Figure 2). 
-Voltage regulator has now been updated to be part of the PCB.
-Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
+- We changed the moisture sensor’s alert system from an audible noise provided by a speaker to a blinking LED. This is because the speaker notification system would get annoying to the user, especially if it goes off during unwanted times (sleep, important meetings/calls, etc). 
+- The voltage of each subsystem (except the moving robot - chassis) have been confirmed to provide 5V. This has been updated in our block diagram (Figure 2). 
+- Voltage regulator has now been updated to be part of the PCB.
+- Type of plant has been determined to be an indoor, medium light plant with a light intensity between 75-150 FC (Foot Candles - unit of measurement for light intensity on plants). Dimensions of the pot have been determined to have a diameter of about 15 cm, in order to fit in the chassis with a length of 16.5 cm and width of 15.7 cm. 
 
 03/31/2023 - Design Doc Revisions were made to Update the Subsystem Requirements
 ---------	
-Sensor subsystem
-Sensor subsystem consists of a light sensor and moisture sensor. The light sensor will record comparative light intensity data during the initial setup and will continue to track results based on time of day, obstruction due to shadows, and seasonal changes. The moisture sensor will watch out for low moisture levels and will alert (Notification subsystem) the user when the plant needs to be watered. 
+Final Subsystem Requirements & Verifications: 
+### Sensor Subsystem
+**Light Sensor Requirement:** The light sensor should collect light data correctly. To do this, show that the photocell light measurements decrease as distance from the light source increases. 
 
-Requirements
-Verification
-The moisture sensor must be able to detect dryness within 2 days, and never send an alarm when not dry. 
-Once we put the moisture sensor in our plant we will test the sensor by testing different amounts of moisture- that is, by gradually watering the plant and noticing the moisture levels that are read by the sensor
-The values provided by the sensor range from approximately 0 to 880, where 0 is for when the sensor is dry and 880 is for when the sensor is completely saturated with moisture.
+**Light Sensor Verification:** Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright. 
 
-Verify the moisture sensor is working properly by taking moisture level measurements consistently throughout a week, and fact-check those levels with online resources and verifications of the plant itself. 
-The light sensor should find the location with the most light within 15 cm of error.
-Have a light source such as a lamp, and move the light sensor further away from it, and see if the illuminance (lx) detected by it decreases.
-We will test it by recording light sensor data over a week and will compare the results to daily sunlight emissions to see if light is properly being detected by the sensor.
+**Moisture Sensor Requirement:** The moisture sensor must be able to detect dryness within 2 days, and send an alarm when soil is dry (below a threshold). 
 
-Continuously record the light sensor data over a weekly period, and make sure measurements being recorded are consistent and accurate with that daily sunlight emissions. 
-The light sensor’s data must be correct
-Test the light sensor with the phone's flashlight with different intensity, and see if the light sensor’s data can indicate which intensity is most bright. 
+**Moisture Sensor Verification:** Test different levels of moisture by gradually watering the plant and notice the change in moisture levels read by the sensor. The values provided by the sensor range from approximately 0 to 880 (0 = dry; 880 = wet)
 
+### Motion Subsystem
+**Verfication:** The chassis should be able to move so that the plant does not fall off of it, and the platform should be large and durable enough to hold an indoor, medium-light plant.
 
-Motion subsystem
-The motion system is a chassis robot carrying the pot. Microcontroller will send commands to it to move the plant to the desired position.
+**Requirement:** Platform & chassis system should be able to carry objects ranging in 2-6 pounds. As well, an object with a diameter between 10-15 cm. 
 
-Requirements
-Verification
-The chassis must be able to move at a constant speed (constant rate between 0.5 -1.2 mph, as it moves in a straight line) to ensure the plant does not fall. As well, so measurements can be recorded at a constant rate. 
-Record the speed at which the chassis moves using IO Lab or some sort of measurement tool that defines velocity and acceleration. 
-The wheels should have an ideal amount of torque based on the size of the plant, in order for the plant to not fall. 
-Calculate the torque using the equation: Torque = rFsin(theta), and solve for Force using IO Lab. 
-The platform should be large and durable enough to hold an indoor, medium-light plant.
-Platform carrying plant can be pre-determined, so make sure the plant being bought fits the size of this platform (diameter of potted-plant base should cover maximum 95% and minimum 45% of the surface area.) Since our chassis has the dimensions of 16.5x15.7 cm, our pot/plant should have a diameter of about 15 cm. 
+### Notification Subsystem
+**Verfication:** Must be able indicate dryness to the user using a notification system (blinking LED).
 
+**Requirement:** Set a minimum threshold of the moisture sensor in the program, and let the processor send a signal to an LED to blink. See if the LED blinks when below threshold.
 
-Notification subsystem
-The notification subsystem will consist of a LED. The LED will blink when the moisture sensor thinks it’s too dry. 
+### Power Subsystem
+**Verfication:** The power system should provide a voltage, and be regulated throughout the entire system.
 
-Requirements
-Verification
-Must be able to blink when receiving a signal of dryness. 
-Connect the LED (a small, colored or white LED that we will take from previous labs used in classes) to the processor and let the processor send the signal. See if the LED blink.
+**Requirement:** Use the “ON” LED on the Dev board, making sure it lights up green, indicating power is on.
 
+### Microcontroller
+**Verfication1:** Able to send a signal of the desired location to the chassis, based on the light sensor.
 
-Power subsystem
-Power subsystem consists of a 3.3V lithium battery and voltage regulator. It handles power regulating and powering other subsystems.
+**Requirement1:** Give the chassis a set of data and check whether it arrives at the desired location according to the data.
 
-Requirements
-Verification
-The system must provide over-current, over-voltage, under-voltage, and short-circuit protection. 
-Connect the voltage regulator to various circuits with varying conditions, see if the regulator can shut down in time.
-It must provide a stable 3.3 ± 0.1 V power source. 
-Check voltage using a multimeter, and ensure that the proper amount of power is being supplied. All of the provided voltages will be tested in the lab, without water in the potted plant, or else testing issues (spilling or leakage of water) may occur. 
+**Verfication2:** Able to analyze data from the moisture sensor, and send a signal to the LED when indicated by the data. 
 
+**Requirement2:** Put the moisture sensor into a dry source (dry soil, paper, air), and check if the LED will blink.
 
-Microcontroller
-The microcontroller (self-designed PCB board) will be able to control the chassis and both moisture and light sensors to send a signal of the desired location to the chassis. As well, the microcontroller will be able to analyze the data from the moisture sensor in order to send a signal to the LED to alert the user the plant needs to be watered. 
+## 04/3/2023 → 04/5/2023 Another PCB & Circuit Schematic was created (Team)
 
-Requirements
-Verification
-Able to store 10 sets of data gathered for each hour during initial setup. 
-Check the memory space after an experimental initial setup.
-Able to send signal of current desired location to chassis. 
-Give the chassis a set of data and check whether it arries desired location according to data.
-Able to analyze data from the moisture sensor and send a signal to the LED when indicated by the data. 
-Put the moisture sensor into a pile of dry paper and check if the LED will blink.
+We re-implemented our microcontroller in this new schematic, and fully implemented our motor driver and motion subsystems compared our first design,
 
+## 04/6/2023 → 4/7/2023 - New PCB & Circuit Schematic was created (Team)
+
+We implemented 2 motor drivers in this new and complete design.
 
 
 
@@ -233,24 +210,24 @@ Our original PCB didn’t work, due to soldering and connection issues, so we ar
 04/21/2023 - Meeting with Raman, Conducted subsystem verifications
 ---------
 TA Meeting Minutes: 
-Make sure to show all high-level requirements working during demo w/proof
-Moisture sensor/Notification system: show that the LED can blink, even if moisture data collection is unable to be made
-Small box, 10by10, vehicle in one corner, robot is able to reach part with more light
-MAKE a video demo and include in presentation
-Mention there is lighting issue, here, so that’s why we did a video demo 
-Robot should be able to carry a plant
-Just show that it moves the plant
-Make sure plant doesn’t fall
-Increase size of pot maybe to ensure it’s fixes on the chassis and doesn’t fall
-Don’t focus on entire room, focus just on a small area - like a box - since you didn’t mention size requirements
-Can reach the light area within one hour (idea: sped up video/timelapse)
-For every requirement and verification
-Have some kind of proof - video or photo proof
-Tested out voltage for example, shows 5 V, if in case that day things don’t work
-Team knowledge
-Everyone be familiar with everything about the project
-Everyone present equally
-Prepare with questions & rebuttals
+- Make sure to show all high-level requirements working during demo w/proof
+  - Moisture sensor/Notification system: show that the LED can blink, even if moisture data collection is unable to be made
+- Small box, 10by10, vehicle in one corner, robot is able to reach part with more light
+  - MAKE a video demo and include in presentation
+  - Mention there is lighting issue, here, so that’s why we did a video demo 
+- Robot should be able to carry a plant
+  - Just show that it moves the plant
+  - Make sure plant doesn’t fall
+  - Increase size of pot maybe to ensure it’s fixes on the chassis and doesn’t fall
+- Don’t focus on entire room, focus just on a small area - like a box - since you didn’t mention size requirements
+  - Can reach the light area within one hour (idea: sped up video/timelapse)
+- For every requirement and verification
+  - Have some kind of proof - video or photo proof
+  - Tested out voltage for example, shows 5 V, if in case that day things don’t work
+- Team knowledge
+  - Everyone be familiar with everything about the project
+  - Everyone present equally
+- Prepare with questions & rebuttals
 
 
 
